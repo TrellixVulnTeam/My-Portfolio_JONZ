@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 162.5%; //
+}
+
+body {
+  font-family: sans-serif;
+  color: $color-pink-highlight;
+  background-color: $color-primary;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.7;
+}
