@@ -13,9 +13,10 @@ html {
 
 body {
   font-family: sans-serif;
-  color: $color-pink-highlight;
-  background-color: $color-primary;
-  font-size: 32px;
-  font-weight: 300;
-  line-height: 1.7;
+  color: $color-white;
+  background-color: $color-primary-dark;
+  display: inline-block;
+  font-size: 16px;
+  //font-weight: 300;
+  //line-height: 1.7;
 }

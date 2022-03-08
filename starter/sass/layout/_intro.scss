@@ -1,5 +1,27 @@
-.intro {
+.header {
   background-color: purple;
-  grid-column: 3/ 10;
+  grid-column: 2/ 12;
   grid-row: 1 / 2;
+  background-image: linear-gradient(
+    rgba($color-primary-dark, 0.93),
+    rgba($color-primary-dark, 1)
+  );
+
+  display: grid;
+  grid-template-rows: 1rem 3.5rem 3.5rem 15rem;
+  grid-row-gap: 1.2rem;
+  padding: 12rem 1rem 2rem 1rem;
+
+  &_1 {
+  }
+
+  &_2 {
+  }
+
+  &_3 {
+  }
+
+  &_4 {
+    align-self: end;
+  }
 }

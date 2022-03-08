@@ -1,5 +1,9 @@
 .sidebarRight {
-  background-color: red;
+  background-color: $color-primary-dark;
   grid-column: sidebarright-start / sidebarright-end;
-  grid-row: 1 / -1;
+  grid-row: 1 / 2;
+
+  &_text {
+    transform: rotate(90deg);
+  }
 }
