@@ -1,0 +1,9 @@
+.where_worked {
+  background-color: aqua;
+  grid-column: 2 / 12;
+  grid-row: 4 / 5;
+
+  overflow: auto;
+
+  display: grid;
+}

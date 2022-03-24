@@ -1,18 +1,1 @@
-.container {
-  display: grid;
-  grid-template-rows: repeat(3, 100vh) auto 100vh;
-  grid-template-columns:
-    [sidebarleft-start] 4rem [sidebarleft-end fullleft-start] minmax(4rem, 1fr)
-    [fullleft-end center-start] repeat(
-      8,
-      [col-start] minmax(min-content, 14rem) [col-end]
-    )
-    [center-end fullright-start]
-    minmax(4rem, 1fr)
-    [fullright-end sidebarright-start] 4rem [sidebarright-end];
 
-  & > * {
-    padding: 40px;
-    //
-  }
-}

@@ -1,0 +1,9 @@
+.projects {
+  background-color: green;
+  grid-column: 2 / 12;
+  grid-row: 5 / 6;
+
+  overflow: auto;
+
+  display: grid;
+}

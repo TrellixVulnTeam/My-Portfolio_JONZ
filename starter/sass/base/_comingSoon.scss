@@ -1,0 +1,48 @@
+header {
+  /* background: red;
+  background-color: red; */
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/house-1.jpeg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.comingSoonMain {
+  top: 50%;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+  color: $color-white;
+  text-align: center;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 90px;
+  font-weight: 400;
+  letter-spacing: 20px;
+  font-family: $font-primary;
+  text-transform: uppercase;
+}
+
+hr {
+  width: 50%;
+  margin: 30px auto;
+  border: 1.5px solid $color-white;
+}
+
+p {
+  font-size: 25px;
+  margin-bottom: 25px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  font-family: $font-secondary;
+  text-transform: uppercase;
+}
+
+#launch {
+  font-size: 40px;
+  word-spacing: 20px;
+}

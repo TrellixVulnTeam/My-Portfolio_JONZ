@@ -1,11 +1,24 @@
 $color-primary: #223a77;
 $color-primary-dark: #0b213d;
 $color-blue-light: #08e5ec;
-/* $color-blue-dark: #09aaaf; */
+$color-blue-dark: #09aaaf;
 $color-white: #e6f1ff;
 $color-pink-highlight: #e31b6d;
 
-$font-primary: sans-serif;
-$font-secondary: sans-serif;
+$color-light-slate: #ccd6f6;
+$color-slate: #8892b0;
 
-$border-radius: 6px;
+$font-primary: "Bebas Neue", sans-serif;
+$font-secondary: "Source Sans Pro", sans-serif;
+
+//$border-radius: 6px;
+
+/* mobileS: `max-width: 330px`,
+mobileM: `max-width: 400px`,
+mobileL: `max-width: 480px`,
+tabletS: `max-width: 600px`,
+tabletL: `max-width: 768px`,
+desktopXS: `max-width: 900px`,
+desktopS: `max-width: 1080px`,
+desktopM: `max-width: 1200px`,
+desktopL: `max-width: 1400px`, */
