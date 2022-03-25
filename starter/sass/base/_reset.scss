@@ -5,11 +5,15 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: linear-gradient($color-primary, $color-primary-dark);
+}
 //Use to hide elements
-hidden {
+.hidden {
   display: none;
 }
 //Use to pause animations
-paused {
+
+.paused {
   animation-play-state: paused;
 }

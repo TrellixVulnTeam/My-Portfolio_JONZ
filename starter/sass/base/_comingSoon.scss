@@ -1,22 +1,22 @@
 header {
-  /* background: red;
-  background-color: red; */
-
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../img/house-1.jpeg);
+  display: flex;
+  /*  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/house-1.jpeg); */
   height: 100vh;
+  width: 100vw;
   background-position: center;
   background-size: cover;
 }
 
 .comingSoonMain {
+  align-items: center;
   top: 50%;
   left: 50%;
-  position: relative;
+  position: absolute;
   transform: translate(-50%, -50%);
   color: $color-white;
   text-align: center;
-  z-index: 1;
+  z-index: 9;
 }
 
 h1 {
@@ -45,4 +45,27 @@ p {
 #launch {
   font-size: 40px;
   word-spacing: 20px;
+  margin-bottom: 55px;
+}
+
+a {
+  text-decoration: none;
+  color: $color-white;
+}
+
+.social-links {
+  text-align: center;
+  padding-bottom: 80px;
+  justify-content: center;
+
+  /* a {
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    width: 200%;
+
+    //height: 200%;
+    //border: 2px solid $color-white;
+    //border-radius: 40px;
+  } */
 }

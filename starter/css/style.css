@@ -22,7 +22,7 @@
   0% {
     filter: hue-rotate(0deg); }
   100% {
-    filter: hue-rotate(360deg); } }
+    filter: hue-rotate(420deg); } }
 
 @keyframes animate {
   0% {
@@ -30,6 +30,18 @@
   80%,
   100% {
     transform: scale(0); } }
+
+@keyframes animateloader {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes animateloader2 {
+  0% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(0deg); } }
 
 @keyframes fadeout {
   0% {
@@ -43,6 +55,9 @@
   100% {
     opacity: 1; } }
 
+/* Loading Screen Colour Variables */
+/* Ring One */
+/* Ring two */
 /* mobileS: `max-width: 330px`,
 mobileM: `max-width: 400px`,
 mobileL: `max-width: 480px`,
@@ -57,61 +72,111 @@ desktopL: `max-width: 1400px`, */
   padding: 0;
   box-sizing: border-box; }
 
-hidden {
+body {
+  background-image: linear-gradient(#223a77, #0b213d); }
+
+.hidden {
   display: none; }
 
-paused {
+.paused {
   animation-play-state: paused; }
 
 pre_section {
   display: flex;
+  position: absolute;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   min-width: 100vw;
-  background-color: #042104;
-  animation: animatebg 10s linear infinite;
-  z-index: 1; }
-  pre_section .loader {
+  background-image: linear-gradient(#223a77, #0b213d);
+  z-index: 10; }
+
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .container .ring {
     position: relative;
-    width: 120px;
-    height: 120px; }
-    pre_section .loader span {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      transform: rotate(calc(18deg * var(--i))); }
-    pre_section .loader span::before {
+    width: 150px;
+    height: 150px;
+    margin: -30px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top: 4px solid #24ecff;
+    animation: animateloader 4s linear infinite; }
+    .container .ring::before {
       content: "";
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 12px;
+      right: 12px;
+      border-radius: 50%;
       width: 15px;
       height: 15px;
-      border-radius: 50%;
-      background: #00ff0a;
-      box-shadow: 0 0 10px #00ff0a, 0 0 20px #00ff0a, 0 0 40px #00ff0a, 0 0 60px #00ff0a, 0 0 80px #00ff0a, 0 0 100px #00ff0a;
-      animation: animate 2s linear infinite;
-      animation-delay: calc(0.1s * var(--i)); }
+      background: #24ecff;
+      box-shadow: 0 0 0 5px #24ecff33, 0 0 0 10px #24ecff22, 0 0 0 20px #24ecff11, 0 0 0 20px #24ecff33; }
+    .container .ring:nth-child(2) {
+      animation: animateloader2 4s linear infinite;
+      animation-delay: -1s;
+      border-top: 4px solid transparent;
+      border-left: 4px solid #93ff2d33; }
+      .container .ring:nth-child(2)::before {
+        content: "";
+        position: absolute;
+        top: initial;
+        bottom: 12px;
+        left: 12px;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        background: #93ff2d;
+        box-shadow: 0 0 0 5px #93ff2d33, 0 0 0 10px #93ff2d22, 0 0 0 20px #93ff2d11, 0 0 0 20px #93ff2d33; }
+    .container .ring:nth-child(3) {
+      animation: animateloader2 4s linear infinite;
+      animation-delay: -3s;
+      position: absolute;
+      top: -66.66px;
+      border-top: 4px solid transparent;
+      border-left: 4px solid #e41cf8; }
+      .container .ring:nth-child(3)::before {
+        content: "";
+        position: absolute;
+        top: initial;
+        bottom: 12px;
+        left: 12px;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        background: #e41cf8;
+        box-shadow: 0 0 0 5px #e41cf833, 0 0 0 10px #e41cf822, 0 0 0 20px #e41cf811, 0 0 0 20px #e41cf833; }
+  .container .ploader {
+    position: absolute;
+    color: #e6f1ff;
+    font-size: 1.5em;
+    font-family: "Source Sans Pro", sans-serif;
+    bottom: -150px;
+    letter-spacing: 0.15em;
+    animation: moveInRight ease-out 3s; }
 
 header {
-  /* background: red;
-  background-color: red; */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/house-1.jpeg);
+  display: flex;
+  /*  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/house-1.jpeg); */
   height: 100vh;
+  width: 100vw;
   background-position: center;
   background-size: cover; }
 
 .comingSoonMain {
+  align-items: center;
   top: 50%;
   left: 50%;
-  position: relative;
+  position: absolute;
   transform: translate(-50%, -50%);
   color: #e6f1ff;
   text-align: center;
-  z-index: 1; }
+  z-index: 9; }
 
 h1 {
   font-size: 90px;
@@ -135,4 +200,24 @@ p {
 
 #launch {
   font-size: 40px;
-  word-spacing: 20px; }
+  word-spacing: 20px;
+  margin-bottom: 55px; }
+
+a {
+  text-decoration: none;
+  color: #e6f1ff; }
+
+.social-links {
+  text-align: center;
+  padding-bottom: 80px;
+  justify-content: center;
+  /* a {
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    width: 200%;
+
+    //height: 200%;
+    //border: 2px solid $color-white;
+    //border-radius: 40px;
+  } */ }
