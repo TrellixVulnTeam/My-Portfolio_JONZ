@@ -9,7 +9,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass coming_soon/sass/main.scss coming_soon/css/style.css -w"
+    "compile:sass": "node-sass starter/sass/main.scss starter/css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,5 @@
     "url": "https://github.com/tsphikas/My-Portfolio/issues"
   },
   "homepage": "https://github.com/tsphikas/My-Portfolio#readme",
-  "devDependencies": {},
   "description": ""
 }

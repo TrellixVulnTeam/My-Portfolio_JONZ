@@ -1,1 +1,18 @@
 /* 320px — 480px: Mobile devices */
+
+@media screen and (max-width: 480px) {
+  /* Intro Page */
+  .intro_content_h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .intro_content_h2 {
+    font-size: 2rem;
+  }
+
+  .intro_content_p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+}

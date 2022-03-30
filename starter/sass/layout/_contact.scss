@@ -1,0 +1,36 @@
+.contact {
+  z-index: 21;
+}
+.contact_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100vw;
+  z-index: 12;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 50px;
+}
+
+.contact_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.social_ul {
+  position: relative;
+  display: flex;
+}
+//
+//
+//
+//
+//
+//
+//
+//

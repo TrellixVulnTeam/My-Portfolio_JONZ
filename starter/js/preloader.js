@@ -10,7 +10,7 @@ const loadWait = function () {
   setTimeout(function () {
     loader.style.display = "none";
     enableScroll();
-  }, 5000);
+  }, 0); /* 5000 */
 };
 
 //Function Disable Scroll on Desktops

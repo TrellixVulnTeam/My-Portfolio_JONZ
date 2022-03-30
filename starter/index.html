@@ -8,6 +8,9 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- FONT LINKS TO REMOVE AND EMBED -->
     <!-- Source FONT SANS PRO EXTRALIGHT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -53,37 +56,188 @@
       </div>
     </header>
 
+    <!-- Nav Bar -->
     <nav class="navbar">
       <div class="navbar_container">
-        <a href="/" id="navbar_logo">Theo Sphikas</a>
+        <a href="#" id="navbar_logo">Theo Sphikas</a>
         <div class="navbar_toggle" id="mobile-menu">
-          <span class="bar"> </span>
-          <span class="bar"> </span>
-          <span class="bar"> </span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
         <ul class="navbar_menu">
           <li class="navbar_item">
-            <a href="/" class="navbar_links"> About </a>
+            <a href="#" class="navbar_links"> About </a>
           </li>
           <li class="navbar_item">
-            <a href="/" class="navbar_links"> Experience </a>
+            <a href="#" class="navbar_links"> Experience </a>
           </li>
           <li class="navbar_item">
-            <a href="/" class="navbar_links"> Work </a>
+            <a href="#" class="navbar_links"> Work </a>
           </li>
           <li class="navbar_item">
-            <a href="/" class="navbar_links"> Contact </a>
+            <a href="#" class="navbar_links"> Contact </a>
           </li>
           <li class="navbar_btn">
-            <a href="/" class="button">Sign Up</a>
+            <a href="#" class="button">Sign Up</a>
           </li>
         </ul>
       </div>
     </nav>
-    <header></header>
+
+    <!-- Header/Intro/Main Section -->
+    <div class="intro">
+      <div class="intro_container">
+        <div class="intro_content">
+          <h1 class="intro_content_h1">Hi, my names is</h1>
+          <h2 class="intro_content_h2">Theo Sphikas</h2>
+          <p class="intro_content_p">
+            I'm a software developer. I build exceptional digital experiences,
+            focusing on building accessible, human-centered products
+          </p>
+          <button class="resume_btn"><a href="#">Resume</a></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="about">
+      <div class="about_container">
+        <div class="about_content">
+          <h1 class="about_content_h1">01. About Me</h1>
+          <p class="about_content_p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem nostrum nihil neque soluta earum, reiciendis illo
+            quod itaque laboriosam? Debitis doloremque aut deserunt obcaecati
+            eligendi inventore. Perferendis inventore autem commodi?
+          </p>
+          <p class="about_content_p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            corporis perferendis molestias officia id blanditiis, culpa iure
+            consequatur cumque quis consequuntur nostrum laboriosam tempore
+            omnis ratione architecto aspernatur aperiam quaerat!
+          </p>
+          <p class="about_content_p">
+            Here are a few technologies i've been working with recently:
+          </p>
+          <ul class="about_content_ul">
+            <li>Javascript (ES6+)</li>
+            <li>Node.js</li>
+            <li>React</li>
+            <li>Unity</li>
+            <li>C#</li>
+          </ul>
+        </div>
+        <div class="about_img_container">
+          <img src="img/pic1.svg" alt="about" id="about_img" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="about">
+      <div class="about_container">
+        <div class="about_content">
+          <h1 class="about_content_h1">02. Where I've Worked</h1>
+          <p class="about_content_p">
+            Here are a few technologies i've been working with recently:
+          </p>
+          <p class="about_content_p">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ipsam tenetur incidunt vero blanditiis ipsa animi ex nesciunt quia id! Ducimus maxime voluptates, vitae voluptas minima minus? Quam, aliquid nulla, dicta est commodi quae fugiat harum tenetur eum officiis assumenda voluptatum excepturi hic officia. Facilis excepturi nihil reprehenderit nemo aperiam.
+          </p>
+          <p class="about_content_p">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, iste ut neque voluptate unde, esse, accusamus eaque velit reprehenderit eos quod nostrum eius a architecto! Quibusdam, quae dolore cum quam eum odit eligendi eos dolorum nihil adipisci explicabo aperiam! Eveniet.
+          </p>
+          <p class="about_content_p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit animi veritatis rem illum? Nesciunt neque blanditiis impedit, veniam facilis dolores suscipit qui autem ratione eos!
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Work Section - Some Things I've Built & Other Projects -->
+    <div class="some">
+      <div class="some_container">
+        <div class="some_card">
+          <div class="some_img_box">
+            <img src="img/pic1.svg" alt="Defect Portal">
+          </div>
+          <div class="some_content_box">
+            <div class="some_content">
+              <h2 class="some_content_h2">Defect Reporting Portal</h2>
+              <p class="some_content_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur eius eaque. Eligendi nisi minima eum, culpa in, illo, sunt corrupti nesciunt dolorem esse non. Ducimus, eveniet quisquam? Error, animi.</p>
+              <a class="some_content_a" href="#">Read More</a>
+              <p>Technologies Used</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="some_card">
+          <div class="some_img_box">
+            <img src="img/pic1.svg" alt="Farm Life">
+          </div>
+          <div class="some_content_box">
+            <div class="some_content">
+              <h2 class="some_content_h2">Xbox Game - Farm Life</h2>
+              <p class="some_content_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur eius eaque. Eligendi nisi minima eum, culpa in, illo, sunt corrupti nesciunt dolorem esse non. Ducimus, eveniet quisquam? Error, animi.</p>
+              <a class="some_content_a" href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="some_card">
+          <div class="some_img_box">
+            <img src="img/pic1.svg" alt="Maria L Photography">
+          </div>
+          <div class="some_content_box">
+            <div class="some_content">
+              <h2 class="some_content_h2">Maria L. Photography</h2>
+              <p class="some_content_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur eius eaque. Eligendi nisi minima eum, culpa in, illo, sunt corrupti nesciunt dolorem esse non. Ducimus, eveniet quisquam? Error, animi.</p>
+              <a class="some_content_a" href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="some_card">
+          <div class="some_img_box">
+            <img src="img/pic1.svg" alt="Defect Portal">
+          </div>
+          <div class="some_content_box">
+            <div class="some_content">
+              <h2 class="some_content_h2">Responsive Card</h2>
+              <p class="some_content_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur eius eaque. Eligendi nisi minima eum, culpa in, illo, sunt corrupti nesciunt dolorem esse non. Ducimus, eveniet quisquam? Error, animi.</p>
+              <a class="some_content_a" href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+      </div>
+    </div>
+    <!-- Contact Section -->
+    <div class="contact">
+      <div class="contact_container">
+        <div class="contact_content">
+          <ul class="social_ul">
+            <li class="social_li">
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li class="social_li">
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li class="social_li">
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    
 
     <!-- My Scipts -->
     <script src="js/preloader.js" type="text/javascript"></script>
     <script src="js/countdown.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
   </body>
 </html>
