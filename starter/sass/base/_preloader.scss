@@ -6,8 +6,7 @@ pre_section {
   min-height: 100vh;
   min-width: 100vw;
   background-image: linear-gradient($color-primary, $color-primary-dark);
-  //animation: animatebg 10s linear infinite;
-  z-index: 10;
+  z-index: 100;
 }
 
 .container {
@@ -87,7 +86,7 @@ pre_section {
       }
     }
   }
-  .ploader {
+  .pageLoader {
     position: absolute;
     color: $color-white;
     font-size: 1.5em;

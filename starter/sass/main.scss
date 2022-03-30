@@ -13,14 +13,17 @@
 @import "components/_dropdown";
 
 @import "layout/_aboutMe";
-
 @import "layout/_experience";
-@import "layout/_grid";
+@import "layout/_work";
 @import "layout/_header";
 @import "layout/_navigation";
 @import "layout/_sidebarLeft";
 @import "layout/_sidebarRight";
-@import "layout/_work";
+
+@import "media/_320_480_mobileMedia";
+@import "media/_481_768_tabletMedia";
+@import "media/_769_1024_laptopMedia";
+@import "media/_1025_1200_desktopMedia";
 
 @import "pages/_contact";
 
