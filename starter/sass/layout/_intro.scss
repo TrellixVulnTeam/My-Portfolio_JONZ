@@ -8,82 +8,74 @@
   align-items: center;
   justify-self: center;
   margin: 0 auto;
-  height: 100vh;
+  height: 90vh;
   z-index: 12;
   width: 100%;
   max-width: 1300px;
   padding: 0 50px;
 }
 
-.intro_content_h1 {
-  font-size: 4rem;
-  background-color: #ff8177;
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+/* First Line My name Is */
+.intro_content_h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0px 0px 30px 4px;
+  background-color: $color-blue-highlight;
+  font-family: $font-secondary;
   background-size: 100%;
+  line-height: 1.1;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  opacity: 0;
 }
 
+/* Theo Sphikas */
 .intro_content_h2 {
-  font-size: 4rem;
-  background-color: #ff8177;
-  background-image: linear-gradient(to top, #b721ff 0%, #21d4ff 100%);
+  font-size: clamp(40px, 8vw, 80px);
+  background-color: $color-light-slate;
+  font-family: $font-primary;
   background-size: 100%;
+  line-height: 1.1;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  opacity: 0;
 }
 
+/* Line 3 Build Things */
+.intro_content_build_h2 {
+  font-size: clamp(40px, 8vw, 80px);
+  background-color: $color-slate;
+  font-family: $font-primary;
+  background-size: 100%;
+  line-height: 1.1;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  opacity: 0;
+}
+
+/* Paragraph last part content */
 .intro_content_p {
-  margin-top: 1rem;
+  margin: 20px 0px 0px;
+  max-width: 1020px;
   font-size: 2rem;
   font-weight: 700;
-  color: $color-white;
+  color: $color-slate;
+  font-family: $font-primary;
+  opacity: 0;
 }
-.resume_btn {
-  font-size: 1rem;
-  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-  padding: 14px 32px;
-  border: none;
-  border-radius: 4px;
-  color: $color-white;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.35s;
-  outline: none;
-  z-index: 3;
-  padding: 12px 36px;
-  margin: 2.5rem 0;
 
-  a {
-    position: relative;
-    z-index: 3;
-    color: $color-white;
-    text-decoration: none;
-  }
-
-  &:after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #4837ff;
-    transition: all 0.35s;
-    border-radius: 4px;
-  }
-
-  &:hover {
-    color: $color-white;
-  }
-
-  &:hover:after {
-    width: 100%;
-  }
+.my_work_btn {
+  margin-top: 2.4rem;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  font-family: $font-secondary;
+  opacity: 0;
 }
 
 .intro_img_container {

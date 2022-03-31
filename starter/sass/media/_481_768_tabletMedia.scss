@@ -31,6 +31,7 @@
     font-size: 1.5rem;
   }
 
+  /* About Page */
   .about_container {
     display: grid;
     grid-template-columns: auto;
@@ -56,6 +57,36 @@
   }
 
   .about_content_p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  /* Contact Page */
+  .contact_container {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+  }
+
+  .contact_content {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .contact_content_h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .contact_content_h2 {
+    font-size: 3rem;
+  }
+
+  .contact_content_p {
     margin-top: 1rem;
     font-size: 1.5rem;
   }

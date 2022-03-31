@@ -1,11 +1,12 @@
 .navbar {
-  background: black;
+  background: $color-primary-dark;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: $font-secondary;
   font-size: 1.2rem;
+  letter-spacing: 1.5px;
   position: sticky;
   top: 0;
   z-index: 9;
@@ -23,8 +24,7 @@
 }
 
 #navbar_logo {
-  background-color: #ff8177;
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb192 100%);
+  background-color: $color-blue-highlight;
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -35,6 +35,11 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
+  opacity: 0;
+  animation: moveInDown ease-in-out 1.5s 1 0.5s normal;
+  animation-fill-mode: forwards;
+  white-space: nowrap;
+  opacity: 0;
 }
 
 .fa-gem {
@@ -45,50 +50,33 @@
   align-items: center;
   list-style: none;
   text-align: center;
+  opacity: 0;
 }
 .navbar_item {
   height: 80px;
+  white-space: nowrap;
 }
 
 .navbar_links {
-  color: $color-white;
+  color: $color-light-slate;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
-}
 
-.navbar_btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1rem;
-  width: 100%;
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  padding: 10px 20px;
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  background: #f77062;
-  color: $color-white;
-}
-
-.button:hover {
-  background: #4837ff;
-  transition: all 0.3s ease;
+  span {
+    color: $color-blue-highlight;
+  }
 }
 
 .navbar_links:hover {
-  color: #f77062;
+  color: $color-blue-highlight;
   transition: all 0.3s ease;
+}
+
+.navbar_btn {
+  animation: moveInDown ease-in-out 1.5s 1 0.5s normal;
+  animation-fill-mode: forwards;
 }

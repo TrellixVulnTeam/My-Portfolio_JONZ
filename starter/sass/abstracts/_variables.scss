@@ -1,10 +1,11 @@
-$color-primary: #223a77;
-$color-primary-dark: #0b213d;
-$color-blue-light: #08e5ec;
+$color-primary: #112240;
+$color-primary-dark: #0a192f;
 $color-blue-dark: #09aaaf;
-$color-white: #e6f1ff;
+
+$color-blue-highlight: #08e5ec;
 $color-pink-highlight: #e31b6d;
 
+$color-white: #e6f1ff;
 $color-light-slate: #ccd6f6;
 $color-slate: #8892b0;
 
@@ -26,17 +27,5 @@ $loading-ring-three-shadow-one: #e41cf833;
 $loading-ring-three-shadow-two: #e41cf822;
 $loading-ring-three-shadow-three: #e41cf811;
 
-$font-primary: "Bebas Neue", sans-serif;
+$font-primary: "Roboto", sans-serif;
 $font-secondary: "Source Sans Pro", sans-serif;
-
-//$border-radius: 6px;
-
-/* mobileS: `max-width: 330px`,
-mobileM: `max-width: 400px`,
-mobileL: `max-width: 480px`,
-tabletS: `max-width: 600px`,
-tabletL: `max-width: 768px`,
-desktopXS: `max-width: 900px`,
-desktopS: `max-width: 1080px`,
-desktopM: `max-width: 1200px`,
-desktopL: `max-width: 1400px`, */

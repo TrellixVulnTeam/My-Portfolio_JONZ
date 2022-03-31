@@ -20,13 +20,10 @@
       rel="stylesheet"
     />
 
-    <!-- Source FONT BEBAS NEUE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:ital,wght@0,200;0,400;0,600;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Source FONT ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,400;0,600;1,900&display=swap" rel="stylesheet"/>
 
     <title>Theo Spik</title>
   </head>
@@ -44,7 +41,7 @@
 
     <!-- Coming Soon -->
 
-    <header class="hidden">
+    <header class="">
       <div class="comeSoon hidden">
         <div class="comingSoonMain">
           <p>theosphikas.co.uk</p>
@@ -57,7 +54,7 @@
     </header>
 
     <!-- Nav Bar -->
-    <nav class="navbar">
+    <nav class="navbar hidden">
       <div class="navbar_container">
         <a href="#" id="navbar_logo">Theo Sphikas</a>
         <div class="navbar_toggle" id="mobile-menu">
@@ -67,19 +64,25 @@
         </div>
         <ul class="navbar_menu">
           <li class="navbar_item">
-            <a href="#" class="navbar_links"> About </a>
+            <a href="#" class="navbar_links"> <span>01</span>. About </a>
           </li>
           <li class="navbar_item">
-            <a href="#" class="navbar_links"> Experience </a>
+            <a href="#" class="navbar_links"><span>02</span>. Experience </a>
           </li>
           <li class="navbar_item">
-            <a href="#" class="navbar_links"> Work </a>
+            <a href="#" class="navbar_links"><span>03</span>. Work </a>
           </li>
           <li class="navbar_item">
-            <a href="#" class="navbar_links"> Contact </a>
+            <a href="#" class="navbar_links"><span>04</span>. Contact </a>
           </li>
           <li class="navbar_btn">
-            <a href="#" class="button">Sign Up</a>
+            <a href="#" class="button_styled_1">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Resume
+            </a>
           </li>
         </ul>
       </div>
@@ -89,14 +92,21 @@
     <div class="intro">
       <div class="intro_container">
         <div class="intro_content">
-          <h1 class="intro_content_h1">Hi, my names is</h1>
-          <h2 class="intro_content_h2">Theo Sphikas</h2>
+          <h1 class="intro_content_h3">Hi, my name is</h1>
+          <h2 class="intro_content_h2">Theo Sphikas.</h2>
+          <h2 class="intro_content_build_h2">I build things for people.</h2>
           <p class="intro_content_p">
             I'm a software developer. I build exceptional digital experiences,
             focusing on building accessible, human-centered products
           </p>
-          <button class="resume_btn"><a href="#">Resume</a></button>
-        </div>
+          <a href="#" class="button_styled_1 my_work_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            See My Work
+          </a>
+          </div>
       </div>
     </div>
 
@@ -156,47 +166,36 @@
     </div>
     
     <!-- Work Section - Some Things I've Built & Other Projects -->
+    <h1 class="about_content_h1">03. Some Things I've Built</h1>
     <div class="some">
-      <div class="some_container">
+        <div class="some_container">
+       
         <div class="some_card">
           <div class="some_img_box">
             <img src="img/pic1.svg" alt="Defect Portal">
           </div>
           <div class="some_content_box">
             <div class="some_content">
-              <h2 class="some_content_h2">Defect Reporting Portal</h2>
-              <p class="some_content_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur eius eaque. Eligendi nisi minima eum, culpa in, illo, sunt corrupti nesciunt dolorem esse non. Ducimus, eveniet quisquam? Error, animi.</p>
-              <a class="some_content_a" href="#">Read More</a>
-              <p>Technologies Used</p>
-            </div>
+              <p class="project-overline">Featured Project</p>
+              <h3 class="project_title">Defect Reporting Portal</h3>
+              <div class="project_description">
+                <p class="some_content_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur eius eaque. Eligendi nisi minima eum, culpa in, illo, sunt corrupti nesciunt dolorem esse non. Ducimus, eveniet quisquam? Error, animi.</p>
+              </div>
+              <ul class="project_tech_list">
+                <li>VS Code</li>
+                <li>Node JS</li>
+                <li>React</li>
+                <li>JS</li>
+                <li>SCSS</li>                
+              </ul>
+              <div class="project_links">
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>         
+              </div>
           </div>
         </div>
 
-        <div class="some_card">
-          <div class="some_img_box">
-            <img src="img/pic1.svg" alt="Farm Life">
-          </div>
-          <div class="some_content_box">
-            <div class="some_content">
-              <h2 class="some_content_h2">Xbox Game - Farm Life</h2>
-              <p class="some_content_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur eius eaque. Eligendi nisi minima eum, culpa in, illo, sunt corrupti nesciunt dolorem esse non. Ducimus, eveniet quisquam? Error, animi.</p>
-              <a class="some_content_a" href="#">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="some_card">
-          <div class="some_img_box">
-            <img src="img/pic1.svg" alt="Maria L Photography">
-          </div>
-          <div class="some_content_box">
-            <div class="some_content">
-              <h2 class="some_content_h2">Maria L. Photography</h2>
-              <p class="some_content_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur eius eaque. Eligendi nisi minima eum, culpa in, illo, sunt corrupti nesciunt dolorem esse non. Ducimus, eveniet quisquam? Error, animi.</p>
-              <a class="some_content_a" href="#">Read More</a>
-            </div>
-          </div>
-        </div>
 
         <div class="some_card">
           <div class="some_img_box">
@@ -204,35 +203,128 @@
           </div>
           <div class="some_content_box">
             <div class="some_content">
-              <h2 class="some_content_h2">Responsive Card</h2>
-              <p class="some_content_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur eius eaque. Eligendi nisi minima eum, culpa in, illo, sunt corrupti nesciunt dolorem esse non. Ducimus, eveniet quisquam? Error, animi.</p>
-              <a class="some_content_a" href="#">Read More</a>
-            </div>
+              <p class="project-overline">Featured Project</p>
+              <h3 class="project_title">Defect Reporting Portal</h3>
+              <div class="project_description">
+                <p class="some_content_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur eius eaque. Eligendi nisi minima eum, culpa in, illo, sunt corrupti nesciunt dolorem esse non. Ducimus, eveniet quisquam? Error, animi.</p>
+              </div>
+              <ul class="project_tech_list">
+                <li>VS Code</li>
+                <li>Node JS</li>
+                <li>React</li>
+                <li>JS</li>
+                <li>SCSS</li>                
+              </ul>
+              <div class="project_links">
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>         
+              </div>
+          </div>
+        </div>
+
+
+        <div class="some_card">
+          <div class="some_img_box">
+            <img src="img/pic1.svg" alt="Defect Portal">
+          </div>
+          <div class="some_content_box">
+            <div class="some_content">
+              <p class="project-overline">Featured Project</p>
+              <h3 class="project_title">Defect Reporting Portal</h3>
+              <div class="project_description">
+                <p class="some_content_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur eius eaque. Eligendi nisi minima eum, culpa in, illo, sunt corrupti nesciunt dolorem esse non. Ducimus, eveniet quisquam? Error, animi.</p>
+              </div>
+              <ul class="project_tech_list">
+                <li>VS Code</li>
+                <li>Node JS</li>
+                <li>React</li>
+                <li>JS</li>
+                <li>SCSS</li>                
+              </ul>
+              <div class="project_links">
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>         
+              </div>
+          </div>
+        </div>
+
+
+        <div class="some_card">
+          <div class="some_img_box">
+            <img src="img/pic1.svg" alt="Defect Portal">
+          </div>
+          <div class="some_content_box">
+            <div class="some_content">
+              <p class="project-overline">Featured Project</p>
+              <h3 class="project_title">Defect Reporting Portal</h3>
+              <div class="project_description">
+                <p class="some_content_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur eius eaque. Eligendi nisi minima eum, culpa in, illo, sunt corrupti nesciunt dolorem esse non. Ducimus, eveniet quisquam? Error, animi.</p>
+              </div>
+              <ul class="project_tech_list">
+                <li>VS Code</li>
+                <li>Node JS</li>
+                <li>React</li>
+                <li>JS</li>
+                <li>SCSS</li>                
+              </ul>
+              <div class="project_links">
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>         
+              </div>
           </div>
         </div>
        
       </div>
-      </div>
+      
     </div>
+
+    <!-- Other Projects -->
+    <h1 class="about_content_h1">Other Projects</h1>
+
+    
+    
+
     <!-- Contact Section -->
-    <div class="contact">
-      <div class="contact_container">
-        <div class="contact_content">
-          <ul class="social_ul">
-            <li class="social_li">
-              <a href="#"><i class="fa-brands fa-github"></i></a>
-            </li>
-            <li class="social_li">
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            </li>
-            <li class="social_li">
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </li>
-            
-          </ul>
-        </div>
+
+    <div class="intro">
+      <div class="intro_container">
+        <div class="intro_content">
+          <h2 class="intro_content_h2">04. What's Next?</h2>
+          <h2 class="intro_content_h2">Get In Touch</h2>
+          <p class="intro_content_p">
+            I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, i'll get back to you!
+          </p>
+          <button class="resume_btn"><a href="#">Say Hello</a></button>
+          </div>
       </div>
     </div>
+
+
+
+
+
+        <!-- Social Links -->
+        <ul class="social_ul">
+          <li class="social_li">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </li>
+          <li class="social_li">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </li>
+          <li class="social_li">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+        
+      </div>
+      
+    </div>
+    
+
+  
     
 
     <!-- My Scipts -->
