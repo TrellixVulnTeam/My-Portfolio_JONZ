@@ -1,62 +1,89 @@
 .about {
+  display: grid;
+  grid-template-columns: 10vw repeat(2, 40vw) 10vw;
   z-index: 11;
-  background-color: #21d4ff;
 }
 
 .about_container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-column: 2 / 4;
+  grid-template-columns: repeat(2, 50%);
   align-items: center;
   justify-self: center;
   margin: 0 auto;
-  height: 100vh;
+  height: 80vh;
   z-index: 12;
   width: 100%;
-  max-width: 1300px;
-  padding: 0 50px;
 }
 
+.about_content {
+  display: grid;
+  grid-column: 1 / 2;
+  padding: 20px;
+}
 .about_content_h1 {
-  font-size: 2rem;
-  background-color: #ff8177;
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  font-size: 32px;
+  font-family: $font-primary;
+  color: $color-light-slate;
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  padding: 20px 20px 15px 20px;
 }
 
 .about_content_h2 {
-  font-size: 1.5rem;
-  background-color: #ff8177;
-  background-image: linear-gradient(to top, #b721ff 0%, #21d4ff 100%);
+  font-size: 20px;
+  font-family: $font-primary;
+  color: $color-slate;
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  padding: 0px 20px 15px 20px;
 }
 
 .about_content_p {
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: $color-white;
+  font-size: 20px;
+  font-family: $font-primary;
+  color: $color-slate;
+  background-size: 100%;
+  padding: 0px 20px 15px 20px;
 }
 
 .about_content_ul {
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: $color-white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 15px;
+  font-family: $font-secondary;
+  color: $color-slate;
+  background-size: 100%;
+  padding: 10px 20px 10px 40px;
+}
+
+.li_bullet {
+  margin: 0 0 5px;
+  padding: 0 0 0 20px;
+}
+
+.li_bullet::marker {
+  color: $color-blue-highlight;
 }
 
 .about_img_container {
-  text-align: center;
+  box-sizing: border-box;
+  display: grid;
+  grid-column: 2 / 3;
+  padding: 20px;
+  z-index: 1;
+  place-items: center;
 }
 
 #about_img {
-  height: 80%;
-  width: 80%;
+  background-color: purple;
+  color: purple;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+
+  height: 60%;
+  width: auto;
+}
+
+.highlight_span {
+  color: $color-blue-highlight;
 }

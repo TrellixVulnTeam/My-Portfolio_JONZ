@@ -15,7 +15,7 @@
 .navbar_container {
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 60px;
   z-index: 2;
   width: 100%;
   max-width: 100%;
@@ -39,9 +39,10 @@
   white-space: nowrap;
 }
 
-.fa-gem {
+/* .fa-gem {
   margin-right: 0.5rem;
-}
+} */
+
 .navbar_menu {
   display: flex;
   align-items: center;

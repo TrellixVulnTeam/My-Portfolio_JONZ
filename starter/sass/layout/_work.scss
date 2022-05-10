@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: beige;
+  //background-color: beige;
 }
 
 .some_container {
@@ -44,28 +44,53 @@
       right: 25px;
       width: 500px;
       height: 400px;
-      background: #000;
-      display: flex;
+      //background: #000;
+      display: grid;
+      grid-template-rows: repeat(6, auto);
       justify-content: center;
       align-items: center;
-      padding: 20px 50px 20px 100px;
+      text-align: right;
+      //padding: 20px 50px 20px 100px;
 
       .some_content {
-        .some_content_h2 {
-          font-size: 30px;
-          color: $color-white;
+        z-index: 9;
+
+        .project_overline {
+          font-size: 13px;
+          font-family: $font-secondary;
+          color: $color-blue-highlight;
         }
+
+        .project_title {
+          font-size: 28px;
+          font-family: $font-primary;
+          color: $color-light-slate;
+        }
+
         .some_content_p {
-          margin-top: 10px;
-          color: $color-white;
-        }
-        .some_content_a {
-          display: inline-block;
-          margin-top: 15px;
-          color: $color-white;
-          text-decoration: none;
+          margin-top: 18px;
+          font-family: $font-primary;
+          color: $color-slate;
+          background-color: $color-primary;
+          border-radius: 5px;
           padding: 10px;
-          border: 1px solid $color-white;
+          //z-index: 9;
+        }
+        .tech_list_ul {
+          list-style: none;
+          white-space: nowrap;
+          margin: 25px 0 10px;
+        }
+        .tech_list_li {
+          font-size: 15px;
+          font-family: $font-secondary;
+          color: $color-light-slate;
+          display: inline;
+          margin: 0 0 5px 20px;
+        }
+
+        .project_links {
+          padding: 10px;
         }
       }
 
@@ -76,8 +101,8 @@
         bottom: -50px;
         left: 0;
         right: 0;
-        background: #000;
-        z-index: -1;
+        //background: #000;
+        //z-index: -1;
       }
     }
 

@@ -258,7 +258,6 @@ pre_section {
 
 .intro_content {
   padding: 20px 20px 200px 100px;
-  display: grid;
   grid-column: 2 / 3; }
 
 /* First Line My name Is */
@@ -317,7 +316,8 @@ pre_section {
   font-size: 14px;
   letter-spacing: 1.5px;
   font-family: "Source Sans Pro", sans-serif;
-  opacity: 0; }
+  opacity: 0;
+  width: fit-content !important; }
 
 .intro_img_container {
   text-align: center; }
@@ -327,59 +327,82 @@ pre_section {
   width: 80%; }
 
 .about {
-  z-index: 11;
-  background-color: #21d4ff; }
+  display: grid;
+  grid-template-columns: 10vw repeat(2, 40vw) 10vw;
+  z-index: 11; }
 
 .about_container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-column: 2 / 4;
+  grid-template-columns: repeat(2, 50%);
   align-items: center;
   justify-self: center;
   margin: 0 auto;
-  height: 100vh;
+  height: 80vh;
   z-index: 12;
-  width: 100%;
-  max-width: 1300px;
-  padding: 0 50px; }
+  width: 100%; }
+
+.about_content {
+  display: grid;
+  grid-column: 1 / 2;
+  padding: 20px; }
 
 .about_content_h1 {
-  font-size: 2rem;
-  background-color: #ff8177;
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  color: #ccd6f6;
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent; }
+  padding: 20px 20px 15px 20px; }
 
 .about_content_h2 {
-  font-size: 1.5rem;
-  background-color: #ff8177;
-  background-image: linear-gradient(to top, #b721ff 0%, #21d4ff 100%);
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #8892b0;
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent; }
+  padding: 0px 20px 15px 20px; }
 
 .about_content_p {
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #e6f1ff; }
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #8892b0;
+  background-size: 100%;
+  padding: 0px 20px 15px 20px; }
 
 .about_content_ul {
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #e6f1ff; }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 15px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #8892b0;
+  background-size: 100%;
+  padding: 10px 20px 10px 40px; }
+
+.li_bullet {
+  margin: 0 0 5px;
+  padding: 0 0 0 20px; }
+
+.li_bullet::marker {
+  color: #08e5ec; }
 
 .about_img_container {
-  text-align: center; }
+  box-sizing: border-box;
+  display: grid;
+  grid-column: 2 / 3;
+  padding: 20px;
+  z-index: 1;
+  place-items: center; }
 
 #about_img {
-  height: 80%;
-  width: 80%; }
+  background-color: purple;
+  color: purple;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  height: 60%;
+  width: auto; }
+
+.highlight_span {
+  color: #08e5ec; }
 
 .some {
   z-index: 11;
@@ -387,8 +410,7 @@ pre_section {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: beige; }
+  align-items: center; }
 
 .some_container {
   position: relative;
@@ -418,33 +440,47 @@ pre_section {
       right: 25px;
       width: 500px;
       height: 400px;
-      background: #000;
-      display: flex;
+      display: grid;
+      grid-template-rows: repeat(6, auto);
       justify-content: center;
       align-items: center;
-      padding: 20px 50px 20px 100px; }
-      .some_container .some_card .some_content_box .some_content .some_content_h2 {
-        font-size: 30px;
-        color: #e6f1ff; }
-      .some_container .some_card .some_content_box .some_content .some_content_p {
-        margin-top: 10px;
-        color: #e6f1ff; }
-      .some_container .some_card .some_content_box .some_content .some_content_a {
-        display: inline-block;
-        margin-top: 15px;
-        color: #e6f1ff;
-        text-decoration: none;
-        padding: 10px;
-        border: 1px solid #e6f1ff; }
+      text-align: right; }
+      .some_container .some_card .some_content_box .some_content {
+        z-index: 9; }
+        .some_container .some_card .some_content_box .some_content .project_overline {
+          font-size: 13px;
+          font-family: "Source Sans Pro", sans-serif;
+          color: #08e5ec; }
+        .some_container .some_card .some_content_box .some_content .project_title {
+          font-size: 28px;
+          font-family: "Roboto", sans-serif;
+          color: #ccd6f6; }
+        .some_container .some_card .some_content_box .some_content .some_content_p {
+          margin-top: 18px;
+          font-family: "Roboto", sans-serif;
+          color: #8892b0;
+          background-color: #112240;
+          border-radius: 5px;
+          padding: 10px; }
+        .some_container .some_card .some_content_box .some_content .tech_list_ul {
+          list-style: none;
+          white-space: nowrap;
+          margin: 25px 0 10px; }
+        .some_container .some_card .some_content_box .some_content .tech_list_li {
+          font-size: 15px;
+          font-family: "Source Sans Pro", sans-serif;
+          color: #ccd6f6;
+          display: inline;
+          margin: 0 0 5px 20px; }
+        .some_container .some_card .some_content_box .some_content .project_links {
+          padding: 10px; }
       .some_container .some_card .some_content_box:before {
         content: "";
         position: absolute;
         top: -50px;
         bottom: -50px;
         left: 0;
-        right: 0;
-        background: #000;
-        z-index: -1; }
+        right: 0; }
     .some_container .some_card .some_img_box {
       position: relative;
       left: 25px;
@@ -476,7 +512,7 @@ pre_section {
 .navbar_container {
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 60px;
   z-index: 2;
   width: 100%;
   max-width: 100%;
@@ -498,9 +534,9 @@ pre_section {
   opacity: 0;
   white-space: nowrap; }
 
-.fa-gem {
-  margin-right: 0.5rem; }
-
+/* .fa-gem {
+  margin-right: 0.5rem;
+} */
 .navbar_menu {
   display: flex;
   align-items: center;
