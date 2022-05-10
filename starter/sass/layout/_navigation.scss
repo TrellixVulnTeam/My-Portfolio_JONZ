@@ -5,8 +5,8 @@
   justify-content: center;
   align-items: center;
   font-family: $font-secondary;
-  font-size: 1.2rem;
-  letter-spacing: 1.5px;
+  font-size: 13px;
+  letter-spacing: 1px;
   position: sticky;
   top: 0;
   z-index: 9;
@@ -18,7 +18,7 @@
   height: 80px;
   z-index: 2;
   width: 100%;
-  max-width: 1300px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 50px;
 }
@@ -34,12 +34,9 @@
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 18px;
   opacity: 0;
-  animation: moveInDown ease-in-out 1.5s 1 0.5s normal;
-  animation-fill-mode: forwards;
   white-space: nowrap;
-  opacity: 0;
 }
 
 .fa-gem {

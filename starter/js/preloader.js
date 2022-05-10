@@ -12,7 +12,7 @@ const loadWait = function () {
     enableScroll();
     console.log("3 sec");
     anim();
-  }, 3000);
+  }, 0);
 
   /* 5000 */
 };
@@ -47,6 +47,7 @@ const introLine4 = document.querySelector(".intro_content_p");
 const myWorkBtn = document.querySelector(".my_work_btn");
 const navBar = document.querySelector(".navbar_menu");
 const navLogo = document.getElementById("navbar_logo");
+const navLogoAnim = document.querySelector(".navbar_links");
 
 //Anim Function
 const anim = function () {
@@ -62,7 +63,7 @@ const anim = function () {
   introLine4.style.animation = "moveInRight ease-in-out 1.5s 1 1.5s normal";
   introLine4.style.animationFillMode = "forwards";
 
-  myWorkBtn.style.animation = "fadeIn ease-in-out 1.5s 1 1.5s normal";
+  myWorkBtn.style.animation = "fadeIn ease-in-out 1.5s 1 2s normal";
   myWorkBtn.style.animationFillMode = "forwards";
 
   navBar.style.animation = "moveInDown ease-in-out 1.5s 1 0.5s normal";
@@ -70,4 +71,6 @@ const anim = function () {
 
   navLogo.style.animation = "moveInDown ease-in-out 1.5s 1 0.5s normal";
   navLogo.style.animationFillMode = "forwards";
+
+  navLogoAnim.style.transition = "all 0.3 ease";
 };

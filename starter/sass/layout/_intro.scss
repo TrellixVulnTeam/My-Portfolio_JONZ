@@ -4,22 +4,28 @@
 
 .intro_container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 10vw 1fr 10vw;
   align-items: center;
   justify-self: center;
-  margin: 0 auto;
-  height: 90vh;
+  //margin: 0 auto;
+  height: 100vh;
   z-index: 12;
   width: 100%;
-  max-width: 1300px;
-  padding: 0 50px;
+  //max-width: 1300px;
+  //padding: 0 50px;
+}
+
+.intro_content {
+  padding: 20px 20px 200px 100px;
+  display: grid;
+  grid-column: 2 / 3;
 }
 
 /* First Line My name Is */
 .intro_content_h3 {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
-  margin: 0px 0px 30px 4px;
+  margin: 0px 0px 20px 4px;
   background-color: $color-blue-highlight;
   font-family: $font-secondary;
   background-size: 100%;
@@ -63,8 +69,8 @@
 .intro_content_p {
   margin: 20px 0px 0px;
   max-width: 1020px;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 400;
   color: $color-slate;
   font-family: $font-primary;
   opacity: 0;
@@ -72,7 +78,7 @@
 
 .my_work_btn {
   margin-top: 2.4rem;
-  font-size: 1.2rem;
+  font-size: 14px;
   letter-spacing: 1.5px;
   font-family: $font-secondary;
   opacity: 0;

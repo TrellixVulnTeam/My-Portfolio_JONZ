@@ -168,63 +168,6 @@ pre_section {
     letter-spacing: 0.15em;
     animation: moveInRight ease-out 3s; }
 
-.comeSoon {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-  background-position: center;
-  background-size: cover; }
-  .comeSoon .comingSoonMain {
-    align-items: center;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    color: #e6f1ff;
-    text-align: center;
-    z-index: 9; }
-    .comeSoon .comingSoonMain #launch {
-      font-size: 40px;
-      word-spacing: 20px;
-      margin-bottom: 55px; }
-
-h1 {
-  font-size: 90px;
-  font-weight: 400;
-  letter-spacing: 20px;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase; }
-
-hr {
-  width: 50%;
-  margin: 30px auto;
-  border: 1.5px solid #e6f1ff; }
-
-p {
-  font-size: 25px;
-  margin-bottom: 25px;
-  font-weight: 400;
-  letter-spacing: 5px;
-  font-family: "Source Sans Pro", sans-serif;
-  text-transform: uppercase; }
-
-a {
-  text-decoration: none;
-  color: #e6f1ff; }
-
-.social-links {
-  text-align: center;
-  padding-bottom: 80px;
-  justify-content: center; }
-  .social-links a {
-    align-items: center;
-    justify-content: center;
-    margin: 0 5px;
-    width: 200%;
-    height: 200%;
-    border: 2px solid #e6f1ff;
-    border-radius: 40px; }
-
 .navbar_btn {
   display: flex;
   justify-content: center;
@@ -306,21 +249,23 @@ a {
 
 .intro_container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 10vw 1fr 10vw;
   align-items: center;
   justify-self: center;
-  margin: 0 auto;
-  height: 90vh;
+  height: 100vh;
   z-index: 12;
-  width: 100%;
-  max-width: 1300px;
-  padding: 0 50px; }
+  width: 100%; }
+
+.intro_content {
+  padding: 20px 20px 200px 100px;
+  display: grid;
+  grid-column: 2 / 3; }
 
 /* First Line My name Is */
 .intro_content_h3 {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
-  margin: 0px 0px 30px 4px;
+  margin: 0px 0px 20px 4px;
   background-color: #08e5ec;
   font-family: "Source Sans Pro", sans-serif;
   background-size: 100%;
@@ -361,15 +306,15 @@ a {
 .intro_content_p {
   margin: 20px 0px 0px;
   max-width: 1020px;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 400;
   color: #8892b0;
   font-family: "Roboto", sans-serif;
   opacity: 0; }
 
 .my_work_btn {
   margin-top: 2.4rem;
-  font-size: 1.2rem;
+  font-size: 14px;
   letter-spacing: 1.5px;
   font-family: "Source Sans Pro", sans-serif;
   opacity: 0; }
@@ -382,7 +327,8 @@ a {
   width: 80%; }
 
 .about {
-  z-index: 11; }
+  z-index: 11;
+  background-color: #21d4ff; }
 
 .about_container {
   display: grid;
@@ -441,7 +387,8 @@ a {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background-color: beige; }
 
 .some_container {
   position: relative;
@@ -520,8 +467,8 @@ a {
   justify-content: center;
   align-items: center;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.2rem;
-  letter-spacing: 1.5px;
+  font-size: 13px;
+  letter-spacing: 1px;
   position: sticky;
   top: 0;
   z-index: 9; }
@@ -532,7 +479,7 @@ a {
   height: 80px;
   z-index: 2;
   width: 100%;
-  max-width: 1300px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 50px; }
 
@@ -547,12 +494,9 @@ a {
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 18px;
   opacity: 0;
-  animation: moveInDown ease-in-out 1.5s 1 0.5s normal;
-  animation-fill-mode: forwards;
-  white-space: nowrap;
-  opacity: 0; }
+  white-space: nowrap; }
 
 .fa-gem {
   margin-right: 0.5rem; }
