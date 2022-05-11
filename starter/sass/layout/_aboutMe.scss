@@ -11,7 +11,7 @@
   align-items: center;
   justify-self: center;
   margin: 0 auto;
-  height: 80vh;
+  height: 100vh;
   z-index: 12;
   width: 100%;
 }
@@ -74,14 +74,9 @@
 }
 
 #about_img {
-  background-color: purple;
-  color: purple;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-
-  height: 60%;
-  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+  height: 80%;
 }
 
 .highlight_span {
