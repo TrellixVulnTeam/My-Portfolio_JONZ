@@ -114,6 +114,8 @@
         &:before {
           top: 0;
           bottom: 0;
+          right: 0;
+          left: 0;
         }
       }
       .some_img_box {
@@ -132,5 +134,26 @@
         }
       }
     }
+  }
+
+  //Intro Section
+  .intro_container {
+    grid-template-columns: 5vw 1fr 5vw;
+  }
+
+  .intro_content_h3 {
+    font-size: 12px;
+  }
+
+  .intro_content_h2 {
+    font-size: 66px;
+  }
+
+  .intro_content_build_h2 {
+    font-size: 64px;
+  }
+
+  .intro_content_p {
+    font-size: 12px;
   }
 }
