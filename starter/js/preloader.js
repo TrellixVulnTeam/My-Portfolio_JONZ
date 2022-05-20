@@ -78,3 +78,35 @@ const anim = function () {
 
   navLogoAnim.style.transition = "all 0.3 ease";
 };
+
+//Fade in on scroll & move in left to right
+const faders = document.querySelectorAll(".fade-scroll");
+const sliders = document.querySelectorAll(".slide-in");
+
+const appearOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px -500px 0px",
+};
+
+const appearOnScroll = new IntersectionObserver(function (
+  entries,
+  appearOnScroll
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("appear");
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
+},
+appearOptions);
+
+faders.forEach((fader) => {
+  appearOnScroll.observe(fader);
+});
+
+faders.forEach((slider) => {
+  appearOnScroll.observe(slider);
+});

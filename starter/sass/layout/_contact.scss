@@ -5,16 +5,14 @@
 .contact_container {
   display: grid;
   grid-template-columns: 10vw 80vw 10vw;
-  grid-template-rows: 80vh 20vh;
+  grid-template-rows: 90vh 10vh;
   align-items: center;
   justify-self: center;
   height: 100vh;
-  //z-index: 12;
   width: 100%;
 }
 
 .contact_content {
-  //padding: 20px 20px 200px 100px;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   text-align: center;

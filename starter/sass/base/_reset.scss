@@ -7,7 +7,7 @@
 
 body {
   background: $color-primary-dark;
-  /* background-image: linear-gradient($color-primary, $color-primary-dark); */
+  overflow-x: hidden;
 }
 //Use to hide elements
 .hidden {
