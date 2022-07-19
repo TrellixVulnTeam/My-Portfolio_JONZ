@@ -7,13 +7,13 @@
   grid-template-columns: 10vw 1fr 10vw;
   align-items: center;
   justify-self: center;
-  height: 100vh;
+  height: 80vh;
   z-index: 12;
   width: 100%;
 }
 
 .intro_content {
-  padding: 20px 20px 200px 100px;
+  padding: 20px 20px 50px 20%;
   grid-column: 2 / 3;
 }
 

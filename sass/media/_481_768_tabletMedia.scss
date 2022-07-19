@@ -1,19 +1,39 @@
 /* 481px — 768px: iPads, Tablets */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 481px) {
   /* Intro Page */
   .intro_container {
     display: grid;
-    grid-template-columns: auto;
-    align-items: center;
-    justify-self: center;
+    grid-template-columns: 3vw 1fr 3vw;
     width: 100%;
     margin: 0 auto;
     height: 100vh;
+
+    .intro_content {
+      padding-left: 8%;
+      margin-bottom: 4rem;
+
+      .intro_content_h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+      }
+
+      .intro_content_h2 {
+        font-size: 55px;
+      }
+
+      .intro_content_build_h2 {
+        font-size: 55px;
+      }
+      .intro_content_p {
+        margin-top: 1rem;
+        font-size: 18px;
+      }
+    }
   }
 
   .intro_content {
-    text-align: center;
+    padding-left: 10%;
     margin-bottom: 4rem;
   }
 
@@ -23,12 +43,12 @@
   }
 
   .intro_content_h2 {
-    font-size: 3rem;
+    //font-size: 60px;
   }
 
   .intro_content_p {
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 18px;
   }
 
   /* About Page */

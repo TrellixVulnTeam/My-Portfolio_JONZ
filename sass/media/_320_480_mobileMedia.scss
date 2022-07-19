@@ -1,0 +1,33 @@
+/* 320px — 480px: Mobile devices */
+
+@media screen and (max-width: 480px) {
+  /* Intro Page */
+  .intro_container {
+    grid-template-columns: 1vw 1fr 1vw;
+  }
+
+  .intro_content {
+    padding-left: 5%;
+
+    .intro_content_h1 {
+      font-size: 2rem;
+      margin-top: 3rem;
+    }
+
+    .intro_content_h2 {
+      font-size: 40px;
+    }
+
+    .intro_content_h3 {
+      font-size: 14px;
+    }
+
+    .intro_content_build_h2 {
+      font-size: 40px;
+    }
+    .intro_content_p {
+      margin-top: 1rem;
+      font-size: 18px;
+    }
+  }
+}
