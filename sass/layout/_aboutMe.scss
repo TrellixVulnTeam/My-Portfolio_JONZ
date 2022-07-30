@@ -18,8 +18,13 @@
 
 .about_content {
   display: grid;
-  grid-column: 1 / 2;
+  grid-column: 1 / -1;
   padding: 20px;
+}
+
+.about_content2 {
+  grid-row: inherit;
+  grid-column: inherit;
 }
 .about_content_h1 {
   font-size: 32px;
@@ -27,6 +32,7 @@
   color: $color-light-slate;
   background-size: 100%;
   padding: 20px 20px 15px 20px;
+  z-index: 12;
 }
 
 .about_content_h2 {
@@ -35,6 +41,7 @@
   color: $color-slate;
   background-size: 100%;
   padding: 0px 20px 15px 20px;
+  z-index: 12;
 }
 
 .about_content_p {
@@ -43,6 +50,7 @@
   color: $color-slate;
   background-size: 100%;
   padding: 0px 20px 15px 20px;
+  z-index: 12;
 }
 
 .about_content_ul {

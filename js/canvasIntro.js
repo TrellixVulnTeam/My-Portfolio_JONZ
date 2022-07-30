@@ -70,7 +70,6 @@ shatter = function (x, y) {
   for (let i = 0; i < 8; i++) {
     miniStars.push(new MiniStar(x, y, 2));
   }
-  console.log(miniStars);
 };
 
 /* Main Star End */
@@ -142,7 +141,7 @@ function init() {
 
   for (let i = 0; i < 150; i++) {
     const x = Math.random() * canvas.width;
-    const y = Math.random() * canvas.width;
+    const y = Math.random() * canvas.height;
     const radius = Math.random() * 2.5;
     backgroundStars.push(new Star(x, y, radius, "white"));
   }
