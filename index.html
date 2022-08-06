@@ -42,80 +42,93 @@
     <title>Theo Spik</title>
   </head>
 
-  <body class="">
-    <!-- Pre Loader -->
-    <pre_section class="loader">
-      <div class="container loader">
-        <div class="ring"></div>
-        <div class="ring"></div>
-        <div class="ring"></div>
-        <p class="pageLoader">Loading...</p>
-      </div>
-    </pre_section>
+  <!-- -             -  ------------    -->
+  <!-- |             |        |         -->
+  <!-- |             |        |         -->
+  <!-- | ----------- |        |         -->
+  <!-- |             |        |         -->
+  <!-- |             |        |         -->
+  <!-- |             |        |         -->
+  <!-- -             -  ------------    -->
 
-    <!-- Nav Bar -->
-    <nav class="navbar">
-      <div class="navbar_container">
-        <a href="#" id="navbar_logo">Theo Sphikas</a>
-        <div class="navbar_toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+  <canvas class="canvas-container parallax"></canvas>
+  <body class="">
+    <div class="site-wrapper">
+      <!-- Pre Loader -->
+      <pre_section class="loader">
+        <div class="container loader">
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <p class="pageLoader">Loading...</p>
         </div>
-        <ul class="navbar_menu">
-          <li class="navbar_item">
+      </pre_section>
+
+      <!-- Nav Bar -->
+      <nav class="navbar">
+        <div class="navbar_container">
+          <a href="#landingPage" id="navbar_logo">Theo Sphikas</a>
+          <div class="navbar_toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar_menu">
+            <!-- <li class="navbar_item">
             <a href="#" class="navbar_links"> <span>01</span>. About </a>
-          </li>
-          <!-- <li class="navbar_item">
+          </li> -->
+            <!-- <li class="navbar_item">
             <a href="#" class="navbar_links"><span>02</span>. Experience </a>
           </li> -->
-          <li class="navbar_item">
-            <a href="#" class="navbar_links"><span>02</span>. Work </a>
-          </li>
-          <li class="navbar_item">
-            <a href="#" class="navbar_links"><span>03</span>. Contact </a>
-          </li>
-          <li class="navbar_btn">
-            <a
-              href="pdf/Theodoros Sphikas - Resume.pdf"
-              target="_blank"
-              class="button_styled_1"
-            >
+            <li class="navbar_item">
+              <a href="#myWork" class="navbar_links"><span>01</span>. Work </a>
+            </li>
+            <li class="navbar_item">
+              <a href="#contactMe" class="navbar_links"
+                ><span>02</span>. Contact
+              </a>
+            </li>
+            <li class="navbar_btn">
+              <a
+                href="pdf/Theodoros Sphikas - Resume.pdf"
+                target="_blank"
+                class="button_styled_1"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Resume
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Header/Intro/Main Section -->
+      <div class="intro" id="landingPage">
+        <div class="intro_container">
+          <div class="intro_content">
+            <h1 class="intro_content_h3">Hey, my name is</h1>
+            <h2 class="intro_content_h2">Theo Sphikas.</h2>
+            <h2 class="intro_content_build_h2">A Web Developer</h2>
+            <p class="intro_content_p">
+              Passionate about creating interactive applications and experiences
+              on the web.
+            </p>
+            <a href="#myWork" class="button_styled_1 my_work_btn">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
-              Resume
+              See My Work
             </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <canvas class="canvas-container parallax"></canvas>
-    <!-- Header/Intro/Main Section -->
-    <div class="intro">
-      <div class="intro_container">
-        <div class="intro_content">
-          <h1 class="intro_content_h3">Hey, my name is</h1>
-          <h2 class="intro_content_h2">Theo Sphikas.</h2>
-          <h2 class="intro_content_build_h2">A Web Developer</h2>
-          <p class="intro_content_p">
-            Passionate about creating interactive applications and experiences
-            on the web.
-          </p>
-          <a href="#" class="button_styled_1 my_work_btn">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            See My Work
-          </a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- About Me Section -->
-    <!--<div class="about">
+      <!-- About Me Section -->
+      <!--<div class="about">
       <div class="about_container">
          <div class="about_content">
           <div class="about_content2 fade-scroll slide-in from-left">
@@ -154,8 +167,8 @@
       </div>
     </div> -->
 
-    <!-- Experience Section -->
-    <!--     <div class="about">
+      <!-- Experience Section -->
+      <!--     <div class="about">
       <div class="about_container">
         <div class="about_content">
           <h1 class="about_content_h1">02. Where I've Worked</h1>
@@ -173,231 +186,232 @@
       </div>
     </div> -->
 
-    <!-- Work Section - Some Things I've Built & Other Projects -->
+      <!-- Work Section - Some Things I've Built & Other Projects -->
 
-    <div class="some">
-      <div class="about_header fade-scroll">
-        <h1 class="about_content_h1">
-          <span class="highlight_span">02.</span> Some Things I've Built
-        </h1>
-        <p class="about_content_p">
-          Here are a few technologies i've been working with recently:
-        </p>
-      </div>
-
-      <div class="some_container">
-        <!-- First Card Defect Portal -->
-        <div class="some_card fade-scroll">
-          <div class="some_img_box">
-            <video controls>
-              <source src="/video/TestMpeg.mp4" type="video/mp4" />
-              <source src="/video/Testwebm.webm" type="video/webm" />
-              <source src="/video/Testogg.ogg" type="video/ogg" />
-            </video>
-            <!-- <img src="img/pic1.svg" alt="Defect Portal"> -->
-          </div>
-          <div class="some_content_box">
-            <div class="some_content">
-              <p class="project_overline">Featured Project</p>
-              <h3 class="project_title">Defect Reporting Portal</h3>
-              <div class="project_description">
-                <p class="some_content_p">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-                  consequuntur eius eaque. Eligendi nisi minima eum, culpa in,
-                  illo, sunt corrupti nesciunt dolorem esse non. Ducimus,
-                  eveniet quisquam? Error, animi.
-                </p>
-              </div>
-              <ul class="tech_list_ul">
-                <li class="tech_list_li">Node.js</li>
-                <li class="tech_list_li">JavaScript</li>
-                <li class="tech_list_li">Sass</li>
-                <li class="tech_list_li">Pug</li>
-              </ul>
-              <div class="project_links">
-                <a href="https://github.com/tsphikas/DefectPortal"
-                  ><i class="fa-brands fa-git-alt fa-2xl fa_colors"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Second Card Maria Website -->
-        <div class="some_card fade-scroll">
-          <div class="some_img_box">
-            <video controls>
-              <source src="/video/TestMpeg.mp4" type="video/mp4" />
-              <source src="/video/Testwebm.webm" type="video/webm" />
-              <source src="/video/Testogg.ogg" type="video/ogg" />
-            </video>
-            <!-- <img src="img/pic1.svg" alt="Defect Portal"> -->
-          </div>
-          <div class="some_content_box">
-            <div class="some_content">
-              <p class="project_overline">Client Request</p>
-              <h3 class="project_title">React Photographer Site</h3>
-              <div class="project_description">
-                <p class="some_content_p">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-                  consequuntur eius eaque. Eligendi nisi minima eum, culpa in,
-                  illo, sunt corrupti nesciunt dolorem esse non. Ducimus,
-                  eveniet quisquam? Error, animi.
-                </p>
-              </div>
-              <ul class="tech_list_ul">
-                <li class="tech_list_li">VS Code</li>
-                <li class="tech_list_li">React</li>
-                <li class="tech_list_li">JavaScript</li>
-                <li class="tech_list_li">Sass</li>
-              </ul>
-              <div class="project_links">
-                <a href="https://github.com/tsphikas/MariaPhotography"
-                  ><i class="fa-brands fa-git-alt fa-2xl fa_colors"></i
-                ></a>
-                <a href="https://mariavphotographer.co.uk"
-                  ><i
-                    class="fa-brands fa-solid fa-arrow-up-right-from-square fa-2xl fa_colors"
-                  ></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Third Card Inspection Application -->
-        <div class="some_card fade-scroll">
-          <div class="some_img_box">
-            <video controls>
-              <source src="/video/TestMpeg.mp4" type="video/mp4" />
-              <source src="/video/Testwebm.webm" type="video/webm" />
-              <source src="/video/Testogg.ogg" type="video/ogg" />
-            </video>
-            <!-- <img src="img/pic1.svg" alt="Defect Portal"> -->
-          </div>
-          <div class="some_content_box">
-            <div class="some_content">
-              <p class="project_overline">Featured Project</p>
-              <h3 class="project_title">Inspection Portal</h3>
-              <div class="project_description">
-                <p class="some_content_p">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-                  consequuntur eius eaque. Eligendi nisi minima eum, culpa in,
-                  illo, sunt corrupti nesciunt dolorem esse non. Ducimus,
-                  eveniet quisquam? Error, animi.
-                </p>
-              </div>
-              <ul class="tech_list_ul">
-                <li class="tech_list_li">Node.js</li>
-                <li class="tech_list_li">JavaScript</li>
-                <li class="tech_list_li">Sass</li>
-                <li class="tech_list_li">Pug</li>
-              </ul>
-              <div class="project_links">
-                <a href="#"
-                  ><i class="fa-brands fa-git-alt fa-2xl fa_colors"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Last Card Xbox Game -->
-        <div class="some_card fade-scroll">
-          <div class="some_img_box">
-            <video controls>
-              <source src="/video/TestMpeg.mp4" type="video/mp4" />
-              <source src="/video/Testwebm.webm" type="video/webm" />
-              <source src="/video/Testogg.ogg" type="video/ogg" />
-            </video>
-            <!-- <img src="img/pic1.svg" alt="Defect Portal"> -->
-          </div>
-          <div class="some_content_box">
-            <div class="some_content">
-              <p class="project_overline">Personal Project</p>
-              <h3 class="project_title">Unity Xbox Game</h3>
-              <div class="project_description">
-                <p class="some_content_p">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-                  consequuntur eius eaque. Eligendi nisi minima eum, culpa in,
-                  illo, sunt corrupti nesciunt dolorem esse non. Ducimus,
-                  eveniet quisquam? Error, animi.
-                </p>
-              </div>
-              <ul class="tech_list_ul">
-                <li class="tech_list_li">VS</li>
-                <li class="tech_list_li">Unity</li>
-                <li class="tech_list_li">C#</li>
-                <li class="tech_list_li">Blender</li>
-              </ul>
-              <div class="project_links">
-                <a href="#"
-                  ><i class="fa-brands fa-git-alt fa-2xl fa_colors"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Other Projects -->
-    <!-- <h1 class="about_content_h1">Other Projects</h1> -->
-
-    <!-- Contact Section -->
-
-    <div class="contact fade-scroll">
-      <div class="contact_container">
-        <div class="contact_content">
-          <h2 class="contact_content_h3">
-            <span class="contact_highlight">04.</span> What's Next?
-          </h2>
-          <h2 class="contact_content_h2">Get In Touch</h2>
-          <p class="contact_content_p">
-            I'm currently looking for new opportunities, my inbox is always
-            open. <br />Whether you have a question or just want to say hi, i'll
-            get back to you!
+      <div class="some" id="myWork">
+        <div class="about_header fade-scroll">
+          <h1 class="about_content_h1">
+            <span class="highlight_span">01.</span> Some Things I've Built
+          </h1>
+          <p class="about_content_p">
+            Here are a few projects i've been working on recently:
           </p>
-          <a
-            href="mailto:tsphikas@gmail.com"
-            class="link button_styled_1 hello_btn"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Say Hello
-          </a>
-          <ul class="social_ul">
-            <li class="social_li">
-              <a href="#"
-                ><i class="fa-brands fa-git-alt fa-2xl fa_color_git"></i
-              ></a>
-            </li>
-            <li class="social_li">
+        </div>
+
+        <div class="some_container">
+          <!-- First Card Defect Portal -->
+          <div class="some_card fade-scroll">
+            <div class="some_img_box">
+              <video class="some_video" controls>
+                <source src="/video/TestMpeg.mp4" type="video/mp4" />
+                <source src="/video/Testwebm.webm" type="video/webm" />
+                <source src="/video/Testogg.ogg" type="video/ogg" />
+              </video>
+              <!-- <img src="img/pic1.svg" alt="Defect Portal"> -->
+            </div>
+            <div class="some_content_box">
+              <div class="some_content">
+                <p class="project_overline">Featured Project</p>
+                <h3 class="project_title">Defect Reporting Portal</h3>
+                <div class="project_description">
+                  <p class="some_content_p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ullam consequuntur eius eaque. Eligendi nisi minima eum,
+                    culpa in, illo, sunt corrupti nesciunt dolorem esse non.
+                    Ducimus, eveniet quisquam? Error, animi.
+                  </p>
+                </div>
+                <ul class="tech_list_ul">
+                  <li class="tech_list_li">Node.js</li>
+                  <li class="tech_list_li">JavaScript</li>
+                  <li class="tech_list_li">Sass</li>
+                  <li class="tech_list_li">Pug</li>
+                </ul>
+                <div class="project_links">
+                  <a href="https://github.com/tsphikas/DefectPortal"
+                    ><i class="fa-brands fa-git-alt fa-2xl fa_colors"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Card Maria Website -->
+          <div class="some_card fade-scroll">
+            <div class="some_img_box">
+              <video class="some_video" controls>
+                <source src="/video/TestMpeg.mp4" type="video/mp4" />
+                <source src="/video/Testwebm.webm" type="video/webm" />
+                <source src="/video/Testogg.ogg" type="video/ogg" />
+              </video>
+              <!-- <img src="img/pic1.svg" alt="Defect Portal"> -->
+            </div>
+            <div class="some_content_box">
+              <div class="some_content">
+                <p class="project_overline">Client Request</p>
+                <h3 class="project_title">React Photographer Site</h3>
+                <div class="project_description">
+                  <p class="some_content_p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ullam consequuntur eius eaque. Eligendi nisi minima eum,
+                    culpa in, illo, sunt corrupti nesciunt dolorem esse non.
+                    Ducimus, eveniet quisquam? Error, animi.
+                  </p>
+                </div>
+                <ul class="tech_list_ul">
+                  <li class="tech_list_li">VS Code</li>
+                  <li class="tech_list_li">React</li>
+                  <li class="tech_list_li">JavaScript</li>
+                  <li class="tech_list_li">Sass</li>
+                </ul>
+                <div class="project_links">
+                  <a href="https://github.com/tsphikas/MariaPhotography"
+                    ><i class="fa-brands fa-git-alt fa-2xl fa_colors"></i
+                  ></a>
+                  <a href="https://mariavphotographer.co.uk"
+                    ><i
+                      class="fa-brands fa-solid fa-arrow-up-right-from-square fa-2xl fa_colors"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Third Card Inspection Application -->
+          <div class="some_card fade-scroll">
+            <div class="some_img_box">
+              <video class="some_video" controls>
+                <source src="/video/TestMpeg.mp4" type="video/mp4" />
+                <source src="/video/Testwebm.webm" type="video/webm" />
+                <source src="/video/Testogg.ogg" type="video/ogg" />
+              </video>
+              <!-- <img src="img/pic1.svg" alt="Defect Portal"> -->
+            </div>
+            <div class="some_content_box">
+              <div class="some_content">
+                <p class="project_overline">Featured Project</p>
+                <h3 class="project_title">Inspection Portal</h3>
+                <div class="project_description">
+                  <p class="some_content_p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ullam consequuntur eius eaque. Eligendi nisi minima eum,
+                    culpa in, illo, sunt corrupti nesciunt dolorem esse non.
+                    Ducimus, eveniet quisquam? Error, animi.
+                  </p>
+                </div>
+                <ul class="tech_list_ul">
+                  <li class="tech_list_li">Node.js</li>
+                  <li class="tech_list_li">JavaScript</li>
+                  <li class="tech_list_li">Sass</li>
+                  <li class="tech_list_li">Pug</li>
+                </ul>
+                <div class="project_links">
+                  <a href="#"
+                    ><i class="fa-brands fa-git-alt fa-2xl fa_colors"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Last Card Xbox Game -->
+          <div class="some_card fade-scroll">
+            <div class="some_img_box">
+              <video class="some_video" controls>
+                <source src="/video/TestMpeg.mp4" type="video/mp4" />
+                <source src="/video/Testwebm.webm" type="video/webm" />
+                <source src="/video/Testogg.ogg" type="video/ogg" />
+              </video>
+              <!-- <img src="img/pic1.svg" alt="Defect Portal"> -->
+            </div>
+            <div class="some_content_box">
+              <div class="some_content">
+                <p class="project_overline">Personal Project</p>
+                <h3 class="project_title">Unity Xbox Game</h3>
+                <div class="project_description">
+                  <p class="some_content_p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ullam consequuntur eius eaque. Eligendi nisi minima eum,
+                    culpa in, illo, sunt corrupti nesciunt dolorem esse non.
+                    Ducimus, eveniet quisquam? Error, animi.
+                  </p>
+                </div>
+                <ul class="tech_list_ul">
+                  <li class="tech_list_li">VS</li>
+                  <li class="tech_list_li">Unity</li>
+                  <li class="tech_list_li">C#</li>
+                  <li class="tech_list_li">Blender</li>
+                </ul>
+                <div class="project_links">
+                  <a href="#"
+                    ><i class="fa-brands fa-git-alt fa-2xl fa_colors"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Projects -->
+      <!-- <h1 class="about_content_h1">Other Projects</h1> -->
+
+      <!-- Contact Section -->
+
+      <div class="contact fade-scroll" id="contactMe">
+        <div class="contact_container">
+          <div class="contact_content">
+            <h2 class="contact_content_h3">
+              <span class="contact_highlight">02.</span> Contact me
+            </h2>
+            <h2 class="contact_content_h2">Get In Touch</h2>
+            <p class="contact_content_p">
+              I'm currently looking for new opportunities, my inbox is always
+              open. <br />Whether you have a question or just want to say hi,
+              i'll get back to you!
+            </p>
+            <a
+              href="mailto:tsphikas@gmail.com"
+              class="link button_styled_1 hello_btn"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Say Hello
+            </a>
+            <ul class="social_ul">
+              <li class="social_li">
+                <a href="https://github.com/tsphikas"
+                  ><i class="fa-brands fa-git-alt fa-2xl fa_color_git"></i
+                ></a>
+              </li>
+              <!--             <li class="social_li">
               <a href="#"
                 ><i class="fa-brands fa-youtube fa-2xl fa_color_youtube"></i
               ></a>
-            </li>
-            <li class="social_li">
-              <a href="#"
-                ><i class="fa-brands fa-linkedin fa-2xl fa_color_linkedin"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
+            </li> -->
+              <li class="social_li">
+                <a href="https://www.linkedin.com/in/1018/"
+                  ><i class="fa-brands fa-linkedin fa-2xl fa_color_linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="designedBy">
-          <a class="designed_a" href="mailto:tsphikas@gmail.com"
-            >Designed & Built by Theodoros Sphikas<br />tsphikas@gmail.com</a
-          >
+          <div class="designedBy">
+            <a class="designed_a" href="mailto:tsphikas@gmail.com"
+              >Designed & Built by Theodoros Sphikas<br />tsphikas@gmail.com</a
+            >
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- My Scipts -->
-    <script src="js/canvasIntro.js"></script>
-    <script src="js/preloader.js" type="text/javascript"></script>
-    <script src="js/app.js" type="text/javascript"></script>
+      <!-- My Scipts -->
+      <script src="js/canvasIntro.js"></script>
+      <script src="js/preloader.js" type="text/javascript"></script>
+      <script src="js/app.js" type="text/javascript"></script>
+    </div>
   </body>
 </html>

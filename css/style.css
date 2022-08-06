@@ -100,10 +100,16 @@
 /* Ring two */
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  padding: 0; }
 
+html,
 body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
+.site-wrapper {
   overflow-x: hidden; }
 
 .hidden {
@@ -269,31 +275,40 @@ pre_section {
 .intro {
   z-index: 11; }
 
+canvas {
+  display: block;
+  box-sizing: border-box; }
+
+.canvas-container {
+  position: fixed;
+  box-sizing: border-box;
+  font-size: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  z-index: 0; }
+
 .intro_container {
   display: grid;
   grid-template-columns: 10vw 1fr 10vw;
   align-items: center;
   justify-self: center;
-  height: 100vh;
+  height: 90vh;
+  width: 100vw;
   z-index: 12;
-  width: 100%;
   position: relative; }
 
-.canvas-container {
-  width: 100vw;
-  height: 100vh;
-  position: fixed; }
-
 .intro_content {
-  padding: 20px 20px 50px 20%;
+  display: grid;
   grid-column: 2 / 3;
-  position: absolute; }
+  align-items: center;
+  justify-content: center; }
 
 /* First Line My name Is */
 .intro_content_h3 {
   font-size: 18px;
   font-weight: 600;
-  margin: 0px 0px 20px 4px;
   background-color: #08e5ec;
   font-family: "Source Sans Pro", sans-serif;
   background-size: 100%;
@@ -334,7 +349,7 @@ pre_section {
 
 /* Paragraph last part content */
 .intro_content_p {
-  margin: 20px 0px 0px;
+  margin: 5px 0px 0px;
   max-width: 1020px;
   font-size: 20px;
   font-weight: 400;
@@ -343,7 +358,7 @@ pre_section {
   opacity: 0; }
 
 .my_work_btn {
-  margin-top: 2.4rem;
+  margin-top: 20px;
   font-size: 14px;
   letter-spacing: 1.5px;
   font-family: "Source Sans Pro", sans-serif;
@@ -548,12 +563,13 @@ pre_section {
   background: #040e1b;
   height: 80px;
   display: flex;
+  position: fixed;
+  width: 100%;
   justify-content: center;
   align-items: center;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 13px;
   letter-spacing: 1px;
-  position: sticky;
   top: 0;
   z-index: 100; }
 
@@ -587,7 +603,7 @@ pre_section {
 } */
 .navbar_menu {
   display: flex;
-  align-items: center;
+  justify-content: center;
   list-style: none;
   text-align: center;
   opacity: 0; }
@@ -603,7 +619,7 @@ pre_section {
   justify-content: center;
   text-decoration: none;
   padding: 0 1rem;
-  height: 100%; }
+  height: 80%; }
   .navbar_links span {
     color: #08e5ec; }
 
@@ -731,20 +747,47 @@ pre_section {
   /* Intro Page */
   .intro_container {
     grid-template-columns: 1vw 1fr 1vw; }
-  .intro_content {
-    padding-left: 5%; }
-    .intro_content .intro_content_h1 {
-      font-size: 2rem;
-      margin-top: 3rem; }
-    .intro_content .intro_content_h2 {
-      font-size: 40px; }
-    .intro_content .intro_content_h3 {
-      font-size: 14px; }
-    .intro_content .intro_content_build_h2 {
-      font-size: 40px; }
-    .intro_content .intro_content_p {
-      margin-top: 1rem;
-      font-size: 18px; } }
+  .intro_content .intro_content_h1 {
+    font-size: 2rem;
+    margin-top: 3rem; }
+  .intro_content .intro_content_h2 {
+    font-size: 40px; }
+  .intro_content .intro_content_h3 {
+    font-size: 16px;
+    margin-bottom: 25px; }
+  .intro_content .intro_content_build_h2 {
+    margin-top: 15px;
+    font-size: 40px; }
+  .intro_content .intro_content_p {
+    margin-top: 25px;
+    font-size: 18px; }
+  .intro_content .my_work_btn {
+    margin-top: 50px; }
+  .contact_container {
+    display: grid;
+    align-items: center;
+    justify-items: center; }
+  .project_title {
+    margin: 15px; }
+  .some_content_p {
+    align-self: center;
+    justify-content: center;
+    align-items: center; }
+  .contact_content {
+    width: 100vw;
+    grid-column: 1 / -1;
+    text-align: center;
+    justify-items: center;
+    z-index: 12; }
+  .hello_btn {
+    margin: 40px 0px 40px 0px; }
+  .contact_content_p {
+    margin: 10px;
+    font-size: 16px !important; }
+  .contact_content_h2 {
+    margin: 0 0 20px 0; }
+  .contact_content_h3 {
+    margin: 10px 0 20px 0; } }
 
 /* 769px — 1024px: Small screens, laptops */
 @media screen and (max-width: 768px) and (min-width: 481px) {
@@ -799,16 +842,11 @@ pre_section {
     font-size: 1.5rem; }
   /* Contact Page */
   .contact_container {
-    display: grid;
-    grid-template-columns: auto;
-    align-items: center;
-    justify-self: center;
-    width: 100%;
     margin: 0 auto;
     height: 100vh; }
   .contact_content {
-    text-align: center;
-    margin-bottom: 4rem; }
+    width: 100vw;
+    padding: 0 20px 0 10px; }
   .contact_content_h1 {
     font-size: 2.5rem;
     margin-top: 2rem; }
@@ -824,29 +862,31 @@ pre_section {
     display: flex;
     justify-content: space-between;
     height: 80px;
-    z-index: 2;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0; }
+    width: 100vw;
+    max-width: 100%;
+    padding: 0;
+    z-index: 2; }
   .navbar_menu {
     display: grid;
-    grid-template-columns: auto;
-    margin: 0;
-    width: 100%;
     position: absolute;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
     top: -1000px;
     opacity: 1;
     transition: all 0.5 ease;
-    height: 50vh;
     z-index: -10;
-    background: black; }
+    background: #040e1b; }
   .navbar_menu.active {
-    background: black;
+    background: #040e1b;
     top: 100%;
-    opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
-    font-size: 1.6rem; }
+    font-size: 1.2rem; }
   #navbar_logo {
     padding-left: 25px; }
   .navbar_toggle .bar {
@@ -858,9 +898,11 @@ pre_section {
   .navbar_item {
     width: 100%; }
   .navbar_links {
+    box-sizing: border-box;
     text-align: center;
+    align-items: flex-start;
     padding: 2rem;
-    width: 100%;
+    width: 100vw;
     display: table; }
   #mobile-menu {
     position: absolute;
@@ -868,7 +910,8 @@ pre_section {
     right: 5%;
     transform: translate(5%, 20%); }
   .navbar_btn {
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    padding-left: 0; }
   .button {
     display: flex;
     justify-content: center;
@@ -890,14 +933,15 @@ pre_section {
     grid-template-columns: 2vw 1fr 2vw; }
   .some_container .some_card {
     flex-direction: column;
-    max-width: 350px;
+    max-width: 330px;
     margin: 2%;
     background: #040e1b; }
     .some_container .some_card .some_content_box {
-      width: 100%;
+      width: 90%;
       height: auto;
       right: 0;
       padding: 30px;
+      margin: 0 10px 0 10px;
       text-align: center; }
       .some_container .some_card .some_content_box:before {
         top: 0;
@@ -914,7 +958,8 @@ pre_section {
     .some_container .some_card:nth-child(even) .some_content_box {
       right: 0;
       padding: 30px;
-      text-align: center; }
+      text-align: center;
+      margin: 0 10px 0 10px; }
   .fa-brands {
     padding-left: 10px;
     padding-right: 10px; }
@@ -923,8 +968,8 @@ pre_section {
   .tech_list_ul {
     padding-bottom: 10px;
     padding-right: 0; }
-  .intro_content {
-    padding-left: 10%; }
+    .tech_list_ul .tech_list_li {
+      margin: 0 10px 5px 10px !important; }
   .intro_container {
     grid-template-columns: 5vw 1fr 5vw; }
   .intro_content_h3 {

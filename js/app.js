@@ -8,3 +8,11 @@ menu.addEventListener("click", function () {
   /* Nav bar scoll down */
   menuLinks.classList.toggle("active");
 });
+
+menuLinks.addEventListener("click", function () {
+  /* Nav Bar Animation */
+  menu.classList.toggle("is-active");
+
+  /* Nav bar scoll down */
+  menuLinks.classList.toggle("active");
+});

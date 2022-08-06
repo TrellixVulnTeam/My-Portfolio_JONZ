@@ -7,8 +7,6 @@
   }
 
   .intro_content {
-    padding-left: 5%;
-
     .intro_content_h1 {
       font-size: 2rem;
       margin-top: 3rem;
@@ -19,15 +17,59 @@
     }
 
     .intro_content_h3 {
-      font-size: 14px;
+      font-size: 16px;
+      margin-bottom: 25px;
     }
 
     .intro_content_build_h2 {
+      margin-top: 15px;
       font-size: 40px;
     }
     .intro_content_p {
-      margin-top: 1rem;
+      margin-top: 25px;
       font-size: 18px;
     }
+    .my_work_btn {
+      margin-top: 50px;
+    }
+  }
+
+  .contact_container {
+    display: grid;
+    //grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .project_title {
+    margin: 15px;
+  }
+  .some_content_p {
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    //width: 90vw;
+  }
+
+  .contact_content {
+    width: 100vw;
+    grid-column: 1 / -1;
+    //padding: 0 20px 0 10px;
+    text-align: center;
+    justify-items: center;
+    z-index: 12;
+  }
+  .hello_btn {
+    margin: 40px 0px 40px 0px;
+  }
+  .contact_content_p {
+    margin: 10px;
+    font-size: 16px !important;
+  }
+  .contact_content_h2 {
+    margin: 0 0 20px 0;
+  }
+  .contact_content_h3 {
+    margin: 10px 0 20px 0;
   }
 }

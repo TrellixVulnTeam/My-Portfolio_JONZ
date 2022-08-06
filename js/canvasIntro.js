@@ -10,7 +10,8 @@ const c = canvas.getContext("2d");
 addEventListener("resize", () => {
   canvas.width = innerWidth;
   canvas.height = innerHeight;
-
+  c.fillRect(0, 0, innerWidth, innerHeight);
+  c.font = "12pt A";
   init();
 });
 

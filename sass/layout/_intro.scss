@@ -2,38 +2,44 @@
   z-index: 11;
 }
 
+canvas {
+  display: block;
+  box-sizing: border-box;
+}
+.canvas-container {
+  position: fixed;
+  box-sizing: border-box;
+  font-size: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  z-index: 0;
+}
+
 .intro_container {
   display: grid;
   grid-template-columns: 10vw 1fr 10vw;
   align-items: center;
   justify-self: center;
-  height: 100vh;
+  height: 90vh;
+  width: 100vw;
   z-index: 12;
-  width: 100%;
   position: relative;
 }
 
-.canvas-container {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  //background-attachment: fixed;
-  //background-position: center;
-  // background-repeat: no-repeat;
-  //background-size: cover;
-}
-
 .intro_content {
-  padding: 20px 20px 50px 20%;
+  display: grid;
   grid-column: 2 / 3;
-  position: absolute;
+  align-items: center;
+  justify-content: center;
 }
 
 /* First Line My name Is */
 .intro_content_h3 {
   font-size: 18px;
   font-weight: 600;
-  margin: 0px 0px 20px 4px;
+
   background-color: $color-blue-highlight;
   font-family: $font-secondary;
   background-size: 100%;
@@ -79,7 +85,7 @@
 
 /* Paragraph last part content */
 .intro_content_p {
-  margin: 20px 0px 0px;
+  margin: 5px 0px 0px;
   max-width: 1020px;
   font-size: 20px;
   font-weight: 400;
@@ -89,7 +95,7 @@
 }
 
 .my_work_btn {
-  margin-top: 2.4rem;
+  margin-top: 20px;
   font-size: 14px;
   letter-spacing: 1.5px;
   font-family: $font-secondary;

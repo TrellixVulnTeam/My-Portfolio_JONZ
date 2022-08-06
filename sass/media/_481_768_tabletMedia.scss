@@ -83,18 +83,14 @@
 
   /* Contact Page */
   .contact_container {
-    display: grid;
-    grid-template-columns: auto;
-    align-items: center;
-    justify-self: center;
-    width: 100%;
     margin: 0 auto;
     height: 100vh;
   }
 
   .contact_content {
-    text-align: center;
-    margin-bottom: 4rem;
+    width: 100vw;
+
+    padding: 0 20px 0 10px;
   }
 
   .contact_content_h1 {
