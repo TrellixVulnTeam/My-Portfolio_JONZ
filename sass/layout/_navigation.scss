@@ -1,9 +1,9 @@
 .navbar {
-  background: #040e1b;
-  height: 80px;
+  background: #0a192f;
   display: flex;
   position: fixed;
-  width: 100%;
+  width: 100vw;
+  height: 8vh;
   justify-content: center;
   align-items: center;
   font-family: $font-secondary;
@@ -38,6 +38,7 @@
   font-size: 18px;
   opacity: 0;
   white-space: nowrap;
+  z-index: 100;
 }
 
 /* .fa-gem {
@@ -46,7 +47,6 @@
 
 .navbar_menu {
   display: flex;
-  //align-items: center;
   justify-content: center;
   list-style: none;
   text-align: center;

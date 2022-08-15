@@ -1,28 +1,9 @@
-.intro {
-  z-index: 11;
-}
-
-canvas {
-  display: block;
-  box-sizing: border-box;
-}
-.canvas-container {
-  position: fixed;
-  box-sizing: border-box;
-  font-size: 0;
-  display: block;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  z-index: 0;
-}
-
 .intro_container {
   display: grid;
   grid-template-columns: 10vw 1fr 10vw;
   align-items: center;
   justify-self: center;
-  height: 90vh;
+  height: 100vh;
   width: 100vw;
   z-index: 12;
   position: relative;
@@ -39,7 +20,6 @@ canvas {
 .intro_content_h3 {
   font-size: 18px;
   font-weight: 600;
-
   background-color: $color-blue-highlight;
   font-family: $font-secondary;
   background-size: 100%;
@@ -86,7 +66,7 @@ canvas {
 /* Paragraph last part content */
 .intro_content_p {
   margin: 5px 0px 0px;
-  max-width: 1020px;
+  width: 100%;
   font-size: 20px;
   font-weight: 400;
   color: $color-slate;
@@ -101,13 +81,4 @@ canvas {
   font-family: $font-secondary;
   opacity: 0;
   width: fit-content !important;
-}
-
-.intro_img_container {
-  text-align: center;
-}
-
-#intro_img {
-  height: 80%;
-  width: 80%;
 }

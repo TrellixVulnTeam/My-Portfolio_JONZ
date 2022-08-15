@@ -1,20 +1,42 @@
 /* Standard Canvas Setup */
+/* const canvas = document.getElementById("canvas");
+const dataURL = canvas.toDataURL();
+const create = document.createElement("canvas"),
+  c = canvas.getContext("2d"); */
+
+//document.body.style.background = "url(" + create.toDataURL() + ")";
+
+/* canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+canvas.style.position = "fixed";
+canvas.style.left = "0";
+canvas.style.top = "0";
+canvas.style.fontSize = "0";
+canvas.style.margin = "0";
+canvas.style.display = "block";
+canvas.style.zIndex = "-1"; */
 
 const canvas = document.querySelector("canvas");
 canvas.width = innerWidth;
 canvas.height = innerHeight;
+canvas.style.position = "fixed";
+canvas.style.left = "0";
+canvas.style.top = "0";
+canvas.style.fontSize = "0";
+canvas.style.margin = "0";
+canvas.style.display = "block";
+canvas.style.zIndex = "2";
 const c = canvas.getContext("2d");
 
 /* Event Listeners */
 
 addEventListener("resize", () => {
+  c.fillRect(0, 0, innerWidth, innerHeight);
   canvas.width = innerWidth;
   canvas.height = innerHeight;
-  c.fillRect(0, 0, innerWidth, innerHeight);
-  c.font = "12pt A";
+  c.font = "0";
   init();
 });
-
 /* Main Star function */
 
 class Star {
@@ -180,7 +202,7 @@ function animate() {
     const radius = 12;
     const x = Math.max(radius, Math.random() * canvas.width - radius);
     stars.push(new Star(x, -100, 12, "#E3EAEF"));
-    randomSpawnRate = randomIntFromRange(75, 200);
+    randomSpawnRate = randomIntFromRange(300, 500);
   }
 }
 

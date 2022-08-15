@@ -1,16 +1,15 @@
 .some {
-  z-index: 11;
+  z-index: 12;
   width: 100%;
-  min-height: 100vh;
+  //height: 100%;
   display: grid;
   grid-template-columns: 10vw 80vw 10vw;
   justify-content: center;
   align-items: center;
-  //background-color: beige;
 }
 
 .about_header {
-  margin-top: 140px;
+  margin-top: 20px;
   display: grid;
   grid-row: 1 / 2;
   grid-column: 2 / 3;
@@ -23,6 +22,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  z-index: 12;
 
   .some_card {
     display: flex;
@@ -65,6 +65,7 @@
 
         .project_overline {
           font-size: 13px;
+          padding-bottom: 4px;
           font-family: $font-secondary;
           color: $color-blue-highlight;
         }

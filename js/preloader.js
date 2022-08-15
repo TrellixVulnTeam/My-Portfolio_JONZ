@@ -10,7 +10,7 @@ const loadWait = function () {
   setTimeout(function () {
     loader.style.display = "none";
     enableScroll();
-    console.log("3 sec");
+    //console.log("3 sec");
     anim();
   }, 0);
 
@@ -85,7 +85,7 @@ const sliders = document.querySelectorAll(".slide-in");
 
 const appearOptions = {
   threshold: 0,
-  rootMargin: "0px 0px -500px 0px",
+  rootMargin: "0px 0px -400px 0px",
 };
 
 const appearOnScroll = new IntersectionObserver(function (
