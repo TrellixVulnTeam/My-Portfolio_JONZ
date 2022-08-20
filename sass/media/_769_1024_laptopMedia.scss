@@ -1,106 +1,6 @@
 @media screen and (max-width: 1024px) {
-  /* Nav Bar */
-
-  .navbar_container {
-    justify-content: space-between;
-    height: 80px;
-    width: 100%;
-    padding: 0;
-    z-index: 2;
-  }
-
-  .navbar_menu {
-    display: grid;
-    position: absolute;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    margin: 0;
-    padding: 0;
-    top: -1000px;
-    opacity: 1;
-    transition: all 0.5 ease;
-    z-index: -10;
-    background: #040e1b;
-  }
-
-  .navbar_menu.active {
-    background: #040e1b;
-    top: 100%;
-    transition: all 0.5s ease;
-    z-index: 99;
-    font-size: 1.2rem;
-  }
-
-  #navbar_logo {
-    padding-left: 25px;
-  }
-
-  .navbar_toggle .bar {
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    transition: all 0.3 ease-in-out;
-    background: $color-white;
-  }
-
-  .navbar_item {
-    width: 100%;
-  }
-
-  .navbar_links {
-    box-sizing: border-box;
-    text-align: center;
-    align-items: flex-start;
-    padding: 2rem;
-    width: 100vw;
-    display: table;
-  }
-
-  #mobile-menu {
-    position: absolute;
-    top: 20%;
-    right: 5%;
-    transform: translate(5%, 20%);
-  }
-
-  .navbar_btn {
-    padding-bottom: 2rem;
-    padding-left: 0 !important;
-    padding: 32px;
-  }
-
-  .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 80px;
-    margin: 0;
-  }
-
-  .navbar_toggle .bar {
-    display: block;
-    cursor: pointer;
-  }
-
-  //Nav Bar Animation
-
-  #mobile-menu.is-active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  #mobile-menu.is-active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  #mobile-menu.is-active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
   /* Card UI */
-  /*  .some {
-    grid-template-columns: 2vw 1fr 2vw;
-  } */
+
   .some_container {
     .some_card {
       flex-direction: column;
@@ -153,6 +53,10 @@
     width: 320px;
   }
 
+  .some_header_p {
+    font-size: 16px;
+  }
+
   .tech_list_ul {
     padding-bottom: 10px;
     padding-right: 0;
@@ -197,15 +101,30 @@
     font-size: 13px;
   }
 
-  .about_container {
-    height: 60vh;
-  }
-
   //Contact Details
   .contact_content_h2 {
     font-size: 40px;
   }
   .contact_content_p {
     font-size: 18px;
+  }
+
+  .about_row {
+    grid-column: 1 / -1;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about_row > * {
+    flex-basis: 100%;
+  }
+  .about_col_1 {
+    display: none;
+  }
+
+  .some_header {
+    margin-top: 100px;
   }
 }

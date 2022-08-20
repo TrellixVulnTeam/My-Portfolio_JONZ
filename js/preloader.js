@@ -52,6 +52,10 @@ const myWorkBtn = document.querySelector(".my_work_btn");
 const navBar = document.querySelector(".navbar_menu");
 const navLogo = document.getElementById("navbar_logo");
 const navLogoAnim = document.querySelector(".navbar_links");
+const about1 = document.querySelector("about_content_h1");
+const about2 = document.querySelector("about_content_h2");
+const about3 = document.querySelector("about_content_p");
+const col2 = document.querySelector("about_col_2");
 
 //Anim Function
 const anim = function () {
@@ -85,7 +89,7 @@ const sliders = document.querySelectorAll(".slide-in");
 
 const appearOptions = {
   threshold: 0,
-  rootMargin: "0px 0px -400px 0px",
+  rootMargin: "0px 0px -300px 0px",
 };
 
 const appearOnScroll = new IntersectionObserver(function (

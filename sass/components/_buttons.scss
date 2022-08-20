@@ -16,6 +16,7 @@
   background: $color-primary;
   transition: 0.5s;
   border-radius: 4px;
+  font-weight: 600;
 
   &:hover {
     color: $color-blue-highlight;
@@ -30,7 +31,7 @@
   span:nth-child(1) {
     left: 0;
     bottom: 0;
-    width: 1px;
+    width: 2px;
     height: 100%;
     transform: scaleY(0);
     transform-origin: top;
@@ -47,7 +48,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 1px;
+    height: 2px;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.5s;
@@ -62,7 +63,7 @@
   span:nth-child(3) {
     right: 0;
     bottom: 0;
-    width: 1px;
+    width: 2px;
     height: 100%;
     transform: scaleY(0);
     transform-origin: top;
@@ -81,7 +82,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 1px;
+    height: 2px;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.5s;

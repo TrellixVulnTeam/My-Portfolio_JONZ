@@ -1,4 +1,4 @@
-@media screen and (max-width: 1265px) and (min-width: 1025px) {
+@media screen and (min-width: 1025px) {
   //Intro Section
   .intro_container {
     grid-template-columns: 5vw 1fr 5vw;
@@ -23,5 +23,21 @@
   //Experience Section
   .some {
     grid-template-columns: 0.5fr 98vw 0.5fr;
+    scroll-margin-top: 80px;
+  }
+
+  .about_row {
+    grid-column: 1 / -1;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about_row > * {
+    flex-basis: 100%;
+  }
+  .about_col_1 {
+    display: none;
   }
 }
